@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 import { Window as WindowReact95, WindowHeader as WindowHeaderReact95, WindowContent as WindowContent95, ScrollView as ScrollView95 } from 'react95';
 
+import { vars } from 'global/reusable';
+
 export const Window = styled(WindowReact95)`
     width: 100%;
     height: calc(100vh - 70px);
@@ -11,6 +13,11 @@ export const Window = styled(WindowReact95)`
     margin: 0 20px;
 
     z-index: 90;
+    
+    @media (max-width: ${vars.size.md}) {
+        height: calc(100vh - 20px);
+        margin: 0 10px;
+    }
 `;
 
 export const WindowHeaderStyled = styled(WindowHeaderReact95)`

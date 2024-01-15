@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { RowWrapper } from 'global/reusable';
+import { RowWrapper, vars } from 'global/reusable';
 
 export const Footer = styled(RowWrapper)``;
 
@@ -23,13 +23,22 @@ export const LineThrough = styled.div`
     }
 
     p {
-        font-size: 30px;
+        font-size: var(--subname-size);
         background-color: #c3c7cb;
+        text-align: center;
 
         display: table;
 
         margin: 0 auto;
         padding: 0 10px;
+
+        @media (max-width: ${vars.size.sm}) {
+            padding: 0 5px;
+
+            span {
+                display: block;
+            }
+        }
     }
 `;
 
@@ -37,6 +46,17 @@ export const RightVersion = styled.p`
     display: block;
     
     text-align: right;
+    font-size: var(--description-size);
 
     margin-top: 4px;
+
+    @media (max-width: ${vars.size.sm}) {
+        text-align: center;
+
+        margin-top: 8px;
+
+        a {
+            display: inline-grid;
+        }
+    }
 `;

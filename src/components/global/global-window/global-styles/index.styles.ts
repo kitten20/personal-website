@@ -3,6 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 import { styleReset } from 'react95';
 import fontsDefault from './fonts.styles';
 
+import { vars } from 'global/reusable';
+
 const GlobalStyles = createGlobalStyle`
     ${styleReset} ${fontsDefault}
 
@@ -10,6 +12,12 @@ const GlobalStyles = createGlobalStyle`
         background-color: black;
 
         margin: 0;
+    }
+
+    :root {
+        --title-size: 30px;
+        --subname-size: 20px;
+        --description-size: 18px;
     }
 
     #root {
@@ -45,6 +53,30 @@ const GlobalStyles = createGlobalStyle`
             height: 2px;
 
             background-color: black;
+        }
+    }
+
+    @media(max-width: ${vars.size.md}) {
+        :root {
+            --title-size: 22px;
+            --subname-size: 18px;
+            --description-size: 18px;
+        }
+    }
+
+    @media (max-width: ${vars.size.sm}) {
+        :root {
+            --title-size: 19px;
+            --subname-size: 16px;
+            --description-size: 15px;
+        }
+    }
+
+    @media (max-width: ${vars.size.xs}) {
+        :root {
+            --title-size: 17px;
+            --subname-size: 13px;
+            --description-size: 13px;
         }
     }
 `;
