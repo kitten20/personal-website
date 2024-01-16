@@ -25,8 +25,8 @@ function WindowContainer() {
             <S.Window>
                 <WindowHeader/>
                 <S.WindowContent>
-                    <S.ScrollView className='scroll-view'>
-                        <S.ScrollChild className='scroll-child'>
+                    <S.ScrollView>
+                        <S.ScrollChild>
                             <Outlet />
                         </S.ScrollChild>
                     </S.ScrollView>
