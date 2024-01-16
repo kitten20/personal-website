@@ -74,6 +74,18 @@ export const ScrollView = styled(ScrollView95)`
     & > div {
         padding: 0;
     }
+
+    @media (max-width: ${vars.size.prmd}) {
+        & > div {
+            ::-webkit-scrollbar {
+                width: 13px;
+
+                &-button {
+                    display: none !important;
+                }
+            }
+        }
+    }
 `;
 
 export const ScrollChild = styled.div`
