@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-import { Welcome, Find, Footer } from 'components/home-page';
+import { Welcome, Find, Footer, Cmd } from 'components/home-page';
 
 function HomePage() {
     return ( 
@@ -9,6 +9,8 @@ function HomePage() {
                 <title>KITTEN20.EXE</title>
             </Helmet>
             <Welcome />
+
+            <Cmd />
 
             <Find />
 

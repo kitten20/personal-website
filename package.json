@@ -1,7 +1,7 @@
 {
   "name": "sc-isaac-app",
   "private": true,
-  "version": "0.2.2",
+  "version": "0.3.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -15,7 +15,8 @@
     "react-helmet-async": "^2.0.4",
     "react-router-dom": "^6.21.1",
     "react95": "^4.0.0",
-    "styled-components": "^6.1.8"
+    "styled-components": "^6.1.8",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",

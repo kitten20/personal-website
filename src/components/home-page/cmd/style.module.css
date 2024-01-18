@@ -1,0 +1,45 @@
+.cursor {
+    display: none;
+}
+
+.left_space {
+    margin-left: 28px;
+}
+
+.news {
+    display: flex;
+}
+
+.news div:first-child {
+    color: #F3F621;
+}
+
+.news div:nth-child(2) {
+    margin: 0 10px;
+}
+
+.news .music {
+    color: #FF6A22;
+}
+
+.news .coding {
+    color: #f45ab4;
+}
+
+@media(max-width: 968px) {
+    .news {
+        flex-direction: column
+    }
+
+    .news div:nth-child(2) {
+        text-align: left;
+
+        margin: 0;
+    }
+}
+
+@media(max-width: 576px) {
+    .news {
+        flex-direction: column;
+    }
+}

@@ -14,6 +14,7 @@ export const Welcome = styled(RowWrapper)`
 
     @media (max-width: ${vars.size.prmd}) {
         flex-direction: column;
+        align-items: center;
     }
 `;
 
@@ -184,6 +185,14 @@ export const DescriptionContainer = styled.div`
 
     @media (max-width: ${vars.size.md}) {
         margin-top: 24px;
+    }
+
+    @media (max-width: ${vars.size.md}) {
+        p:first-child {
+            max-width: 290px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     @media (max-width: ${vars.size.xs}) {
