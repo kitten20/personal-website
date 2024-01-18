@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { Frame } from 'react95';
-import { RowWrapper } from 'global/reusable';
+import { RowWrapper, vars } from 'global/reusable';
 
 export const Cmd = styled(RowWrapper)`
     margin: 8px 0;
@@ -21,5 +21,9 @@ export const CmdFrame = styled(Frame)`
         color: #c4c7c5;
         font-weight: bold;
         font-size: var(--subname-size);
+    }
+
+    @media (max-width: ${vars.size.sm}) {
+        padding: 12px 4px;
     }
 `;
