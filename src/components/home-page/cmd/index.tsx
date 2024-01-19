@@ -17,7 +17,7 @@ function Cmd() {
     const [news, setNews] = useState<INews[]>([]);
 
     useEffect(() => {
-        fetch('src/server/news.json').then(res => res.json()).then(i => setNews(i.news));
+        fetch('server/news.json').then(res => res.json()).then(i => setNews(i.news));
     }, []);
 
     return news[0]?.date ? (
