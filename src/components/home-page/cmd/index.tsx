@@ -29,7 +29,7 @@ function Cmd() {
                     onInit={(typewriter) => {
                         typewriter
                             .pasteString(`<span class=${styles.centered_adaptive}>Kittosoft(R) Mirrors 95</span>`, null)
-                            .pasteString(`<br/><span class=${styles.centered_adaptive}><span class=${styles.left_space}></span>(C)Copyright Kittosoft Corp. <br class=${styles.break_adaptive} />2021 - 2024</span>`, null)
+                            .pasteString(`<br/><span class=${styles.centered_adaptive}><span class=${styles.left_space}></span>(C)Copyright Kittosoft Corp. <br class=${styles.break_adaptive} />2021 - ${new Date().getFullYear()}</span>`, null)
                             .pauseFor(1500)
                             .pasteString('<br/>', null)
                             .pasteString('<br/>' + `<span class=${styles.path}>C:/Users/AnonymousKitten-${'' + Math.ceil(Math.random() * 10000000)}</span>>`, null)
