@@ -23,6 +23,10 @@ export const CmdFrame = styled(Frame)`
         font-size: var(--subname-size);
     }
 
+    @media (max-width: ${vars.size.prmd}) {
+        height: 380px;
+    }
+
     @media (max-width: ${vars.size.sm}) {
         padding: 12px 4px;
     }

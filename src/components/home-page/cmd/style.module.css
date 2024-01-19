@@ -26,6 +26,10 @@
     color: #f45ab4;
 }
 
+.break_adaptive {
+    display: none;
+}
+
 @media(max-width: 968px) {
     .news {
         flex-direction: column
@@ -41,5 +45,25 @@
 @media(max-width: 576px) {
     .news {
         flex-direction: column;
+    }
+
+    .centered_adaptive {
+        text-align: center;
+
+        display: inline-block;
+
+        width: 100%;
+    }
+
+    .left_space {
+        display: none;
+    }
+
+    .path {
+        display: none
+    }
+    
+    .break_adaptive {
+        display: block;
     }
 }

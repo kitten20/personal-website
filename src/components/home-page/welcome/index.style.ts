@@ -187,7 +187,7 @@ export const DescriptionContainer = styled.div`
         margin-top: 24px;
     }
 
-    @media (max-width: ${vars.size.md}) {
+    @media (max-width: ${vars.size.prmd}) {
         p:first-child {
             max-width: 290px;
             margin-left: auto;
