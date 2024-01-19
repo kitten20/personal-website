@@ -30,16 +30,16 @@ function Cmd() {
                     }}
                     onInit={(typewriter) => {
                         typewriter
-                            .pasteString('Kittosoft(R) Mirrors 95')
-                            .pasteString(`<br/><span class=${styles.left_space}></span>(C)Copyright Kittosoft Corp. 2021 - 2024`)
+                            .pasteString('Kittosoft(R) Mirrors 95', null)
+                            .pasteString(`<br/><span class=${styles.left_space}></span>(C)Copyright Kittosoft Corp. 2021 - 2024`, null)
                             .pauseFor(1500)
-                            .pasteString('<br/>')
-                            .pasteString('<br/>' + pcPath)
+                            .pasteString('<br/>', null)
+                            .pasteString('<br/>' + pcPath, null)
                             .typeString('shownews')
-                            .pasteString('<br/>')
+                            .pasteString('<br/>', null)
                             .pauseFor(500);
 
-                        news.forEach(i => typewriter.pasteString('<br/>' + `<div class=${styles.news}><div>${i.date}:</div><div>${i.info}</div><div class=${i.tag === 'music' ? styles.music : i.tag === 'coding' ? styles.coding : '' }>#${i.tag}</div></div>`));
+                        news.forEach(i => typewriter.pasteString('<br/>' + `<div class=${styles.news}><div>${i.date}:</div><div>${i.info}</div><div class=${i.tag === 'music' ? styles.music : i.tag === 'coding' ? styles.coding : '' }>#${i.tag}</div></div>`, null));
 
                         typewriter.start();
                     }}
