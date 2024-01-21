@@ -7,10 +7,6 @@ function HomePage() {
         <>
             <Helmet>
                 <title>KITTEN20.EXE</title>
-
-                <meta property='og:url' content='https://kitten20.vercel.app' />
-                <meta property='og:title' content='KITTEN20.EXE' />
-                <meta property='twitter:title' content='KITTEN20.EXE' />
             </Helmet>
             <Welcome />
 
