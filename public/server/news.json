@@ -1,6 +1,11 @@
 {
     "news": [
         {
+            "date": "21.01.2024",
+            "info": "0.4.0 is on Github! Fixed some bugs and added og-meta tags.",
+            "tag": "coding"
+        },
+        {
             "date": "18.01.2024",
             "info": "0.3.0 is on Github! Fixed some bugs and cmd-news block.",
             "tag": "coding"
