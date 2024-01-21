@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { WindowContainer } from 'global';
 import { HomePage, AboutPage } from './pages';
 
-import imgOg from 'https://raw.githubusercontent.com/kitten20/personal-website/master/public/og-photo.png';
+const imgOg = 'https://raw.githubusercontent.com/kitten20/personal-website/master/public/og-photo.png';
 
 function App() {
     return (
