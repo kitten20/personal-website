@@ -1,6 +1,6 @@
 import * as S from './index.style';
 
-import imgSteam from './assets/steam.png';
+import imgTelegram from './assets/telegram.png';
 import imgDiscord from './assets/discord.png';
 import imgSoundcloud from './assets/soundcloud.png';
 import imgGithub from './assets/github.png';
@@ -16,7 +16,7 @@ function Find() {
         <S.Find>
             <S.FindTitle>where can you find me?</S.FindTitle>
             <S.FindSocials>
-                <FindMedia href="https://steamcommunity.com/profiles/76561199068911801/" src={imgSteam}/>
+                <FindMedia href="https://t.me/qMilly" src={imgTelegram}/>
                 <FindMedia href="https://discordapp.com/users/426331342436040704" src={imgDiscord}/>
                 <FindMedia href="https://soundcloud.com/qrellyq/tracks" src={imgSoundcloud}/>
                 <FindMedia href="https://github.com/kitten20" src={imgGithub}/>
