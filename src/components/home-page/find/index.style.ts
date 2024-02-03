@@ -37,7 +37,7 @@ export const FindSocials = styled.div`
     display: flex;
     justify-content: center;
 
-    margin: 40px 0;
+    margin: 20px 0 40px;
 
     a {
         width: 80px;

@@ -5,6 +5,10 @@ import { RowWrapper, vars } from 'global/reusable';
 
 export const Cmd = styled(RowWrapper)`
     margin: 8px 0;
+
+    @media (max-width: ${vars.size.xs}) {
+        margin-bottom: 2px;
+    }
 `;
 
 export const CmdFrame = styled(Frame)`

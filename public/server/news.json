@@ -1,6 +1,21 @@
 {
     "news": [
         {
+            "date": "03.02.2024",
+            "info": "0.6.0 is on Github! Fixed bugs and added SoundCloud block.",
+            "tag": "coding"
+        },
+        {
+            "date": "28.01.2024",
+            "info": "0.5.0 is on Github! Added discord and changed Steam to Telegram.",
+            "tag": "coding"
+        },
+        {
+            "date": "27.01.2024",
+            "info": "'Please, Just Let Me Go' by me and Hehp is on SoundCloud!",
+            "tag": "music"
+        },
+        {
             "date": "21.01.2024",
             "info": "0.4.0 is on Github! Fixed some bugs and added og-meta tags.",
             "tag": "coding"

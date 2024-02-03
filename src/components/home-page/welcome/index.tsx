@@ -14,7 +14,6 @@ function Welcome() {
                     <S.TitleWelcome>Hi, I'm Daniil Ulyanov!</S.TitleWelcome>
                     <S.TitleTopLinks>
                         <p>a.k.a.</p>
-                        <a href="https://steamcommunity.com/profiles/76561199068911801/">Hikaru Kaneda,</a>
                         <a href="https://discordapp.com/users/426331342436040704">K1tten_21,</a>
                         <a href="https://soundcloud.com/qrellyq/tracks">Relly Q - Almost Dead,</a>
                         <a href="https://github.com/kitten20">Kitten20.</a>
