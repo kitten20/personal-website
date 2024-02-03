@@ -1,7 +1,7 @@
 function AboutPage() {
     return ( 
         <div>
-            1
+            <strong>About page is developing!</strong>
         </div>
     );
 }

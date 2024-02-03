@@ -156,25 +156,8 @@ export const DescriptionContainer = styled.div`
     a {
         text-transform: uppercase;
 
-        &.in-progress {
-            &::before {
-                content: '';
-
-                position: absolute;
-                top: 50%;
-                left: 0;
-                transform: translateY(-50%);
-
-                width: 100%;
-                height: 2px;
-
-                background-color: black;
-                opacity: 0.5;
-            }
-
-            &::after {
-                opacity: 0.25;
-            }
+        &.about-me {
+            font-size: calc(var(--description-size) + 2px);
         }
 
         span {

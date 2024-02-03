@@ -22,8 +22,7 @@ function Welcome() {
 
                     <S.DescriptionContainer>
                         <p>An 18-Year-Old Frontend Developer from Russia, who loves old-school games, delicious pizza, Breakcore music and JavaScript!</p>
-                        <p>Currently working in <a href="https://slex.io">slex.io</a>.</p>
-                        <Link to="/about" className='in-progress'>about this project<span>(in progress)</span></Link>
+                        <Link to="/about" className='about-me'>about me</Link>
                     </S.DescriptionContainer>
                 </S.TitleTopWrapper>
             </S.WelcomeColumn>
