@@ -26,6 +26,8 @@ export const SoundFrame = styled(Frame)`
     height: 380px;
 
     padding: 2px;
+
+    background-color: #e5e5e5;
 `;
 
 export const SoundIFrame = styled.iframe`
