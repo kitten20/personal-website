@@ -6,7 +6,7 @@ import { vars } from 'global/reusable';
 
 export const Window = styled(WindowReact95)`
     width: 100%;
-    height: calc(100vh - 70px);
+    height: calc(100% - 70px);
     max-width: 1482px;
     max-height: 954px;
     padding: 4px;
@@ -15,7 +15,7 @@ export const Window = styled(WindowReact95)`
     z-index: 90;
     
     @media (max-width: ${vars.size.md}) {
-        height: calc(100vh - 20px);
+        height: calc(100% - 20px);
         margin: 0 10px;
     }
 `;
