@@ -1,8 +1,10 @@
+import { Helmet } from 'react-helmet-async';
+
 function AboutPage() {
     return ( 
-        <div>
-            <strong>About page is developing!</strong>
-        </div>
+        <>
+            <Helmet><title>KITTEN20.EXE - ABOUT</title></Helmet>
+        </>
     );
 }
 

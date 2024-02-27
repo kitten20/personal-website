@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 import { Button } from 'react95';
 import Find from '../find';
@@ -10,9 +10,11 @@ import GlobalStyles from '../global-styles/index.styles';
 import * as S from './index.styles';
 
 function WindowHeader() {
+    const location = useLocation();
+
     return ( 
         <S.WindowHeaderStyled>
-            <span>Kitten20.exe</span>
+            <span>{location.pathname.length === 1 ? 'Kitten20.exe' : `Kitten20.exe - ${location.pathname.slice(1)}`}</span>
             <Button onClick={() => window.location.href = 'https://github.com/kitten20'}>
                 <S.CloseIcon />
             </Button>
