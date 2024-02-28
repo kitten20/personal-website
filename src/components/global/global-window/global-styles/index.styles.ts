@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
         justify-content: center;
         overflow: hidden;
 
-        height: 100vh;
+        height: ${window.innerHeight}px;
     }
 
     * {
