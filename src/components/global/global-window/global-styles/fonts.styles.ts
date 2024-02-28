@@ -1,7 +1,9 @@
+import { css } from 'styled-components';
+
 import ms_sans_serif from 'react95/dist/fonts/ms_sans_serif.woff2';
 import ms_sans_serif_bold from 'react95/dist/fonts/ms_sans_serif_bold.woff2';
 
-const fontsDefault =  `
+const fontsDefault =  css`
 @font-face {
     font-family: 'ms_sans_serif';
     src: url('${ms_sans_serif}') format('woff2');
