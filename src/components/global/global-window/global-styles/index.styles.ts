@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     * {
-        font-family: "ms_sans_serif" !important;
+        font-family: "ms_sans_serif", "ms_sans_serif_rus" !important;
     }
 
     p, a  {

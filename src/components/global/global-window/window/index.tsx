@@ -14,7 +14,7 @@ function WindowHeader() {
 
     return ( 
         <S.WindowHeaderStyled>
-            <span>{location.pathname.length === 1 ? 'Kitten20.exe' : `Kitten20.exe - ${location.pathname.slice(1)}`}</span>
+            <span>{location.pathname.length === 1 ? 'Kitten20.exe' : `Kitten20.exe | ${location.pathname.slice(1)}`}</span>
             <Button onClick={() => window.location.href = 'https://github.com/kitten20'}>
                 <S.CloseIcon />
             </Button>
