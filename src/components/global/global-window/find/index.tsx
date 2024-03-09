@@ -1,3 +1,5 @@
+import { hooks } from 'global/reusable';
+
 import * as S from './index.style';
 
 import imgTelegram from './assets/telegram.png';
@@ -12,9 +14,11 @@ function FindMedia ({href, src}: {href: string, src: string }) {
 }
 
 function Find() {
+    const { t } = hooks.useTranslates();
+
     return ( 
         <S.Find>
-            <S.FindTitle>where can you find me?</S.FindTitle>
+            <S.FindTitle>{t.mainFindTitle}</S.FindTitle>
             <S.FindSocials>
                 <FindMedia href="https://t.me/qMilly" src={imgTelegram}/>
                 <FindMedia href="https://discordapp.com/users/426331342436040704" src={imgDiscord}/>

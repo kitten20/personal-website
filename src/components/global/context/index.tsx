@@ -1,6 +1,6 @@
 import { useState, useEffect, createContext, PropsWithChildren } from 'react';
 
-import { useLocation } from 'react-router-dom';
+import { hooks } from 'global/reusable';
 
 export interface IContext  {
     news: {
@@ -19,26 +19,12 @@ const contextBasicData: IContext = {
 export const Context = createContext(contextBasicData);
 
 export default function ContextProvider({children}: PropsWithChildren) {
-    const location = useLocation();
-    const [locationIsChanged, setLocationIsChanged] = useState(false);
-    const [previousLocation, setPreviousLocation] = useState<typeof location | null>(null);
     const [news, setNews] = useState<IContext['news']>([]);
+    const { locationIsChanged } = hooks.useLocationChanged();
 
     useEffect(() => {
         fetch('server/news.json').then(res => res.json()).then(i => setNews(i.news));
     }, []);
-
-    useEffect(() => {
-        if (previousLocation && location !== previousLocation) {
-            setLocationIsChanged(true);
-        }
-        
-        setPreviousLocation(location);
-
-        return () => {
-            setPreviousLocation(null);
-        };
-    }, [location, previousLocation]);
 
     return (
         <Context.Provider value={{

@@ -1,10 +1,14 @@
+import { hooks } from 'global/reusable';
+
 import * as S from './index.style';
 
 function Sound() {
+    const { t } = hooks.useTranslates();
+
     return ( 
         <S.Sound>
             <S.SoundTitle>
-                My SoundCloud Tracks!!!
+                {t.homeSoundCloudTitle}
             </S.SoundTitle>
 
             <S.SoundFrame variant='field'>

@@ -31,6 +31,7 @@ export const Find = styled(RowWrapper)`
 export const FindTitle = styled.p`
     text-transform: capitalize;
     font-size: var(--title-size);
+    text-align: center;
 `;
 
 export const FindSocials = styled.div`

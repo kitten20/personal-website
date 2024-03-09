@@ -29,6 +29,25 @@ export const WindowHeaderStyled = styled(WindowHeaderReact95)`
     justify-content: space-between;
 `;
 
+export const WindowHeaderColumn = styled.span`
+    display: flex;
+    align-items: center;
+
+    a {
+        line-height: normal;
+        text-decoration-line: none;
+
+        &::after {
+            display: none;
+        }
+
+        img {
+            height: 22px;
+            margin-left: 5px;
+        }
+    }
+`;
+
 export const WindowContent = styled(WindowContent95)`
     padding: 0 2px;
     height: calc(100% - 40px);

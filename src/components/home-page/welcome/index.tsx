@@ -1,8 +1,11 @@
 import { Link } from 'react-router-dom';
 
+import { hooks } from 'global/reusable';
 import * as S from './index.style';
 
 function Welcome() {
+    const { t } = hooks.useTranslates();
+
     return ( 
         <S.Welcome>
             <S.WelcomeColumn>
@@ -11,7 +14,7 @@ function Welcome() {
 
             <S.WelcomeColumn>
                 <S.TitleTopWrapper>
-                    <S.TitleWelcome>Hi, I'm Daniil Ulyanov!</S.TitleWelcome>
+                    <S.TitleWelcome>{t.homeWelcome}</S.TitleWelcome>
                     <S.TitleTopLinks>
                         <p>a.k.a.</p>
                         <a href="https://t.me/qMilly">qMilly,</a>
@@ -21,8 +24,8 @@ function Welcome() {
                     </S.TitleTopLinks>
 
                     <S.DescriptionContainer>
-                        <p>An 18-Year-Old Frontend Developer from Russia, who loves old-school games, delicious pizza, Breakcore music and JavaScript!</p>
-                        <Link to="/about" className='about-me'>about me</Link>
+                        <p>{t.homeDescription}</p>
+                        <Link to="about" className='about-me'>{t.homeAboutMe}</Link>
                     </S.DescriptionContainer>
                 </S.TitleTopWrapper>
             </S.WelcomeColumn>
