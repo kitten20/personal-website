@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-import { Welcome, Cmd, Sound } from 'components/home-page';
+import { Welcome, Cmd, Sound } from 'components/pages/home-page';
 
 function HomePage() {
     return ( 
