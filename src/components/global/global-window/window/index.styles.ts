@@ -37,6 +37,9 @@ export const WindowHeaderColumn = styled.span`
         line-height: normal;
         text-decoration-line: none;
 
+        outline: none;
+        user-select: none;
+
         &::after {
             display: none;
         }
