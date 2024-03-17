@@ -23,7 +23,7 @@ export default function ContextProvider({children}: PropsWithChildren) {
     const { locationIsChanged } = hooks.useLocationChanged();
 
     useEffect(() => {
-        fetch('server/news.json').then(res => res.json()).then(i => setNews(i.news));
+        fetch('https://serve-news-json.vercel.app/news.json').then(res => res.json()).then(i => setNews(i.news));
     }, []);
 
     return (

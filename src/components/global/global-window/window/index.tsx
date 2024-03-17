@@ -1,5 +1,7 @@
 import { Outlet, Link, useLocation } from 'react-router-dom';
 
+import { vars } from 'global/reusable';
+
 import { Button } from 'react95';
 import Find from '../find';
 import Footer from '../footer';
@@ -14,6 +16,7 @@ import * as S from './index.styles';
 
 function WindowHeader() {
     const location = useLocation();
+    const { languages } = vars;
 
     const changeLanguage = (path: string) => {
         const locationSplitted = location.pathname.split('/').filter(i => i);
@@ -25,10 +28,10 @@ function WindowHeader() {
         <S.WindowHeaderStyled>
             <S.WindowHeaderColumn>
                 <span>Kitten20.exe</span>
-                <Link to={changeLanguage('/ru')} replace>
+                <Link to={changeLanguage(languages[0])} replace>
                     <img src={iconRu} alt={'rus'} />
                 </Link>
-                <Link to={changeLanguage('/en')} replace>
+                <Link to={changeLanguage(languages[1])} replace>
                     <img src={iconGb} alt={'gb'} />
                 </Link>
             </S.WindowHeaderColumn>

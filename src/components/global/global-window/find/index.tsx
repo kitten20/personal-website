@@ -20,10 +20,10 @@ function Find() {
         <S.Find>
             <S.FindTitle>{t.mainFindTitle}</S.FindTitle>
             <S.FindSocials>
-                <FindMedia href="https://t.me/qMilly" src={imgTelegram}/>
-                <FindMedia href="https://discordapp.com/users/426331342436040704" src={imgDiscord}/>
-                <FindMedia href="https://soundcloud.com/qrellyq/tracks" src={imgSoundcloud}/>
-                <FindMedia href="https://github.com/kitten20" src={imgGithub}/>
+                <FindMedia href='https://t.me/qMilly' src={imgTelegram}/>
+                <FindMedia href='https://discordapp.com/users/426331342436040704' src={imgDiscord}/>
+                <FindMedia href='https://soundcloud.com/qrellyq/tracks' src={imgSoundcloud}/>
+                <FindMedia href='https://github.com/kitten20' src={imgGithub}/>
             </S.FindSocials>
         </S.Find>
     );

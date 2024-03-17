@@ -4,3 +4,5 @@ export const size = {
     sm: '576px',
     xs: '376px'
 };
+
+export const languages = ['/ru', '/en'];

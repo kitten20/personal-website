@@ -10,11 +10,9 @@ function Exp() {
     const {t} = hooks.useTranslates(),
         e = t.experience;
 
-    const locationSplitted = location.pathname.split('/').filter(i => i)[0];
-
     return ( 
         <S.Exp>
-            <S.ExpLinkHome to={'/' + locationSplitted}>
+            <S.ExpLinkHome to={'/' + location.pathname.split('/').filter(i => i)[0]}>
                 {t.aboutReturn}
             </S.ExpLinkHome>
             <S.ExpTitle>{t.aboutTitle}</S.ExpTitle>

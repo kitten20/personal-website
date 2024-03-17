@@ -2,7 +2,9 @@ import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { WindowContainer, ContextProvider } from 'global';
 import { HomePage, AboutPage } from './pages';
 
-const languages = ['/ru', '/en'];
+import { vars } from 'global/reusable';
+
+const { languages } = vars;
 
 function Language() {
     const location = useLocation();
@@ -11,8 +13,9 @@ function Language() {
         return <WindowContainer />;
     }
 
-    return <Navigate to={languages[1]} replace={true}/>;
+    return <Navigate to={vars.languages[1]} replace={true}/>;
 }
+
 function App() {
     return (
         <ContextProvider>
