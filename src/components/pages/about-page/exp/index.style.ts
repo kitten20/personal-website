@@ -26,7 +26,7 @@ export const ExpFrame = styled(Frame)`
     background-color: black;
 
     width: 100%;
-    padding: 5px;
+    padding: 15px 5px;
 
     * {
         color: white;

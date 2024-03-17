@@ -1,3 +1,4 @@
 import Exp from './exp';
+import Comp from './comp';
 
-export { Exp };
+export { Exp, Comp };
