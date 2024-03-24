@@ -12,6 +12,7 @@ const GlobalStyles = createGlobalStyle`
         background-color: black;
 
         margin: 0;
+        height: ${window.innerHeight}px;
     }
 
     :root {
