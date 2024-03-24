@@ -1,6 +1,6 @@
 ![alt text](https://raw.githubusercontent.com/kitten20/personal-website/master/public/og-photo.png)
 
-# 🇬🇧 Hi! I'm Daniil! 👋Welcome to my personal website's repository! :D
+## 🇬🇧 Hi! I'm Daniil! 👋Welcome to my personal website's repository! :D
 <h3>Couple of words about it!</h3>
 
 - ⚙ Project is made with: Love, Vite, TypeScript, React, Styled-Components and React-Router-Dom.
@@ -9,11 +9,11 @@
 <h3>😉 And don't be shy! It's time to see the site itself!<h3>
 
 
-# 🇷🇺 Привет! Меня зовут Даниил! 👋Добро пожаловать на репозиторий моего вебсайта! :D
+## 🇷🇺 Привет! Меня зовут Даниил! 👋Добро пожаловать на репозиторий моего вебсайта! :D
 
 <h3>Парочку слов о нём!</h3>
 
-- ⚙ Проект сделан с любовью, Vite, TypeScript, React, Styled-Components и React-Router-Dom.
+- ⚙ Проект сделан с Любовью, Vite, TypeScript, React, Styled-Components и React-Router-Dom.
 - 💅 Сам сайт сделан с помощью [React95-io](https://github.com/react95-io/React95/). Огромное им спасибо за такое классное дополнение к styled-somponents!
 
 <h3>😉 И не стесняйтесь! Пора увидеть сам сайт в действии!<h3>
