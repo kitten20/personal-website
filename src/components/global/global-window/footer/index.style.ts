@@ -24,7 +24,7 @@ export const LineThrough = styled.div`
 
     p {
         font-size: var(--subname-size);
-        background-color: #c3c7cb;
+        background-color: rgb(198 198 198);
         text-align: center;
 
         display: table;
