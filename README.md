@@ -6,7 +6,7 @@
 - ⚙ Project is made with: Love, Vite, TypeScript, React, Styled-Components and React-Router-Dom.
 - 💅 The whole website is made using [React95-io](https://github.com/react95-io/React95/). Thank them so much for such a cool addition for styled-components!
 
-<p>😉 Don't be shy! It's time to see the site itself!<p>
+<h3>😉 And don't be shy! It's time to see the site itself!<h3>
 
 
 # 🇷🇺 Привет! Меня зовут Даниил! 👋Добро пожаловать на репозиторий моего вебсайта! :D
@@ -16,4 +16,4 @@
 - ⚙ Проект сделан с любовью, Vite, TypeScript, React, Styled-Components и React-Router-Dom.
 - 💅 Сам сайт сделан с помощью [React95-io](https://github.com/react95-io/React95/). Огромное им спасибо за такое классное дополнение к styled-somponents!
 
-<p>😉 Не стесняйтесь! Пора увидеть сам сайт в действии!<p>
+<h3>😉 И не стесняйтесь! Пора увидеть сам сайт в действии!<h3>
