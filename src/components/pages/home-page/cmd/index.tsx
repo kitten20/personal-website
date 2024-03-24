@@ -10,11 +10,11 @@ import styles from './style.module.css';
 // Please, don't judge me. This typewriter is a freaking bag fulled of crap
 function TypewriterComponent() {
     const { news, locationIsChanged } = useContext(Context);
-
+    
     return <Typewriter
         options={{
             cursorClassName: styles.cursor,
-            delay: !locationIsChanged ? 32 : 0
+            delay: 6
         }}
         onInit={(typewriter) => {
             if (!locationIsChanged) {
@@ -51,7 +51,7 @@ function TypewriterComponent() {
 
 function Cmd() {
     const { news } = useContext(Context);
-
+    
     return news[0]?.date ? (
         <S.Cmd>
             <S.CmdFrame variant='field'>

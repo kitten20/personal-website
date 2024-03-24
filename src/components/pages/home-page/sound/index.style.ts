@@ -23,11 +23,15 @@ export const SoundTitle = styled.p`
 
 export const SoundFrame = styled(Frame)`
     width: 100%;
-    height: 380px;
+    height: 520px;
 
     padding: 2px;
 
     background-color: #e5e5e5;
+
+    @media (max-width: ${vars.size.prmd}) {
+        height: 380px;
+    }
 `;
 
 export const SoundIFrame = styled.iframe`

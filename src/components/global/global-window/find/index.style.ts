@@ -31,6 +31,7 @@ export const Find = styled(RowWrapper)`
 export const FindTitle = styled.p`
     text-transform: capitalize;
     font-size: var(--title-size);
+    text-align: center;
 `;
 
 export const FindSocials = styled.div`
@@ -61,16 +62,20 @@ export const FindSocials = styled.div`
 
     @media (max-width: ${vars.size.prmd}) {
         a {
-            width: 60px;
+            width: 70px;
+
+            &:not(:last-child){
+                    margin-right: 32px;
+                }
         }
     }
 
     @media (max-width: ${vars.size.sm}) {
         a {
-            width: 45px;
+            width: 55px;
 
                 &:not(:last-child){
-                    margin-right: 30px;
+                    margin-right: 25px;
                 }
         }
     }
@@ -79,7 +84,7 @@ export const FindSocials = styled.div`
         margin: 12px 0;
 
         a {
-            width: 40px;
+            width: 45px;
 
                 &:not(:last-child){
                     margin-right: 20px;
