@@ -12,6 +12,8 @@ const GlobalStyles = createGlobalStyle`
         background-color: black;
 
         margin: 0;
+
+        overflow: hidden;
     }
 
     :root {
