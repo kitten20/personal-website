@@ -49,33 +49,33 @@ const en = {
     worked: {
         freelance: {
             type: 'Freelance',
-            date: 'since 21.06.2021',
-            skills: 'HTML, CSS, SCSS, JavaScript, React, TypeScript',
-            description: 'That\'s how I started my career in front-end development, which then led me to work at the enterprise. Although in fact, I do not leave this activity and sometimes, for the sake of fun, I fulfill various small orders that give a pleasant bonus in the form of money for a cup of coffee :)'
+            date: 'Since 21.06.2021',
+            skills: 'HTML, CSS, SCSS, JavaScript, TypeScript, React, Styled-components',
+            description: 'Freelancing basically started my work as a developer, where I managed to practice with a lot of technologies that I know now. I was engaged in tasks from small fixes on pages to rewriting small stores from scratch on TypeScript + React.'
         },
         linkiiie: {
             type: 'Linkiiie.ru',
             date: '19.12.2021 - 13.07.2022',
-            skills: 'HTML, SCSS, JavaScript',
-            description: 'The first company I was accepted into. In fact, it was not even a company, but a startup that planned to become an "agrigator of links all over the Internet." Alas, the project died a year later, but it was possible to consolidate the knowledge of the layout, vanilla Javascript.'
+            skills: 'JavaScript, SCSS, БЭМ, Github, Figma',
+            description: 'The company was essentially a startup, which was a large aggregator of links all over the Internet, which could only give out a sea of free tutorials by entering information into the search. My responsibilities included developing a project based on the finished design, as well as direct participation in the code review'
         },
         desc: {
             type: 'DESC-Studio.ru',
             date: '22.08.2022 - 27.06.2023',
-            skills: 'HTML, CSS, SCSS, JavaScript, React',
-            description: 'The second company was engaged in the development of various websites: from business cards to large corporate ones using various technologies. Constant sprints and a large amount of new experience helped to form the missing qualities and knowledge.'
+            skills: 'HTML, CSS, SCSS (+modules), JavaScript, TypeScript, React (v.18), Github',
+            description: 'We worked in an outsourcing team. My responsibilities included participating in a code review on Github, communicating with the team as a whole, and working with various technologies (from "make a letter" to large projects on React+ TypeScript). During his work, he was able to gain a lot of experience, as well as knowledge that helps in solving current tasks at work.'
         },
         qchart: {
             type: 'QChart.io',
             date: '09.11.2022 - 10.01.2023',
-            skills: 'SCSS, TypeScript, React',
-            description: 'It\'s just a one-time project that I managed to participate in. The task was to build dynamic graphs of coins, analyze their value, and work with graphs. Finally, I managed to work with React and TypeScript normally, as well as get acquainted with styled-components.'
+            skills: 'TypeScript, React (v.17), Styled-Components, WebSockets, Github, Figma',
+            description: 'Qchart.io - a project (a small startup) in which I was able to participate as a developer. In 2 months, we developed a product that was a visual demonstration and dynamics of the exchange rate of coins, as well as a forecast for a drop or increase in the price of each. The data was built on the basis of Websockets when the backend itself was developed on Nest.js, which was then stretched over the Reactor. There were several people in the project, and in a fairly short period of time I was able to participate in a large number of code reviews.'
         },
         slex: {
             type: 'Slex.io | Slavi.io',
-            date: 'since 18.08.2023',
-            skills: 'HTML, SCSS(+ modules), TypeScript, React, Next.js',
-            description: 'Work is underway on two projects at once. In the first one - slex.io - tasks specifically for the layout of the site in standard HTML, SCSS. Slavi.io - already a project that uses Next.js in combination with TypeScript for building dynamic graphs, pages.'
+            date: 'Since 18.08.2023',
+            skills: 'TypeScript, React (v.18), Next.js, SCSS modules, Gitlab',
+            description: 'Work is underway on Next.js + TypeScript. There are several developers in the team, including me, and my job involves a large number of tasks: from component layout to working with a large number of factories processing APIs, but always participating in a code review on Gitlab.'
         }
     }
 };
@@ -132,32 +132,32 @@ const ru = {
         freelance: {
             type: 'Фриланс',
             date: 'c 21.06.2021',
-            skills: 'HTML, CSS, SCSS, JavaScript, React, TypeScript',
-            description: 'То, с чего я вообще начал свой путь во фронтенд разработке, что потом привело меня к работе в энтерпрайзе. Хотя на самом деле это занятие я не оставляю и иногда ради веселья выполняю различные мелкие заказы, которые дают приятный бонус в виде денег на чашечку кофе  :)'
+            skills: 'HTML, CSS, SCSS, JavaScript, TypeScript, React, Styled-components',
+            description: 'На фрилансе в принципе началась моя работа как разработчика, где удалось попрактиковаться с большим количеством технологий, которые я знаю сейчас. Занимался тасками от маленьких фиксов по страничкам до переписывания небольших магазинов с нуля на TypeScript + React.'
         },
         linkiiie: {
             type: 'Linkiiie.ru',
             date: '19.12.2021 - 13.07.2022',
-            skills: 'HTML, SCSS, JavaScript',
-            description: 'Первая компания, в которую меня приняли. По факту, это была даже не компания, а стартап, который планировал стать "агригатором ссылок по всему Интернету". Увы, проект погиб спустя год, однако удалось закрепить знания вёрстки, ванильного Джаваскрипта.'
+            skills: 'JavaScript, SCSS, БЭМ, Github, Figma',
+            description: 'Компания по сути своей являлось стартапом, который представлял собой большой агрегатор ссылок по всему Интернету, который мог лишь по вводу информации в поиск выдать море бесплатных туториалов. В мои обязанности входило разрабатывать проект по готовому дизайну, а также непосредственное участие в code-review'
         },
         desc: {
             type: 'DESC-Studio.ru',
             date: '22.08.2022 - 27.06.2023',
-            skills: 'HTML, CSS, SCSS, JavaScript, React',
-            description: 'Вторая компания занималась разработкой различных сайтов: от визиток до крупных корпоративных с использованием различных технологий. Постоянные спринты и большое количество нового опыта помогли сформировать недостающие качества и знания.'
+            skills: 'HTML, CSS, SCSS (+modules), JavaScript, TypeScript, React (v.18), Github',
+            description: 'Работали в команде на аутсорсе. В моих обязанностях было участие в code-review на Github, общение с командой в целом, работа велась с различными технологиями (от "сделайте письмо" до больших проектов на React + TypeScript). За время работы смог получить большое количество опыта, а также знаний, которые помогают при решении нынешних задач на работе.'
         },
         qchart: {
             type: 'QChart.io',
             date: '09.11.2022 - 10.01.2023',
-            skills: 'SCSS, TypeScript, React',
-            description: 'Просто одноразовый проект, в котором удалось принять участие. Задача состояла в построении динамических графиков монет, анализ их стоимости, работа с графиками. Наконец-то нормально получилось поработать с React и TypeScript, а также познакомиться с styled-components.'
+            skills: 'TypeScript, React (v.17), Styled-Components, WebSockets, Github, Figma',
+            description: 'Qchart.io - проект (небольшой стартап), в котором я смог принять участие как разработчик. За 2 месяца разработали продукт, который представлял собой наглядную демонстрацию и динамику курса монет, а также прогноз на падение или рост цены каждой. Данные строились на основе Вебсокетов, когда сам бекенд был разработан на Nest.js, который затем натягивался на Реакт. В проекте было несколько человек, а за достаточно короткий промежуток времени смог поучаствовать в большом количестве code-review.'
         },
         slex: {
             type: 'Slex.io | Slavi.io',
             date: 'c 18.08.2023',
-            skills: 'HTML, SCSS(+ modules), TypeScript, React, Next.js',
-            description: 'Работа ведётся сразу на двух проектах. В первом - slex.io - задачи именно на вёрстку сайта на стандартных HTML, SCSS. Slavi.io - уже проект, в котором используется Next.js в сочетании с TypeScript для построения динамических графиков, страниц.'
+            skills: 'TypeScript, React (v.18), Next.js, SCSS modules, Gitlab',
+            description: 'Работа ведётся на Next.js + TypeScript. В команде есть несколько разработчиков, включая меня, и моя работа имеет в себе большое количество заданий: от вёрстки компонентов до работы с большим количеством фабрик, обрабатывающих api, но всегда - участие в code-review на Gitlab.'
         }
     }
 };
