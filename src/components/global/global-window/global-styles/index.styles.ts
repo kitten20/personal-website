@@ -20,6 +20,7 @@ const GlobalStyles = createGlobalStyle`
         --title-size: 30px;
         --subname-size: 20px;
         --description-size: 18px;
+        --link-color: #0010d1;
     }
 
     #root {
@@ -44,17 +45,19 @@ const GlobalStyles = createGlobalStyle`
     a {
         position: relative;
 
+        color: var(--link-color);
+
         &::after {
             content: '';
 
             position: absolute;
-            bottom: 0;
+            bottom: -3px;
             left: 0;
 
             width: 100%;
             height: 2px;
 
-            background-color: black;
+            background-color: var(--link-color);
         }
     }
 

@@ -96,8 +96,12 @@ export const TitleTopLinks = styled.div`
         }
     }
 
-    a::after {
-        background-color: #737373;
+    a {
+        color: var(--link-color);
+
+        &::after {
+            bottom: -1px;
+        }
     }
 
     @media (max-width: ${vars.size.md}) {
@@ -157,7 +161,7 @@ export const DescriptionContainer = styled.div`
         text-transform: uppercase;
 
         &.about-me {
-            font-size: calc(var(--description-size) + 2px);
+            font-size: calc(var(--description-size) + 5px);
         }
 
         span {
@@ -171,10 +175,14 @@ export const DescriptionContainer = styled.div`
     }
 
     @media (max-width: ${vars.size.prmd}) {
-        p:first-child {
+        p {
             max-width: 290px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        a.about-me {
+            font-size: calc(var(--description-size));
         }
     }
 

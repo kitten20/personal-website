@@ -1,11 +1,20 @@
+const currentDate = new Date().getFullYear();
+const startDate = currentDate - new Date(2021, 6, 13).getFullYear();
+const typescriptDate = currentDate - new Date(2022, 8, 22).getFullYear();
+const ttDate = currentDate - new Date(2022, 1, 15).getFullYear();
+
+const yearsEng = (date: number) => `${date}+ years`;
+const yearsRus = (date: number) => date >= 5 ? `${date}+ лет` : `${date}+ года`;
+
 const en = {
     language: '/en',
     mainFindTitle: 'where can you find me?',
     mainProjectVersion: 'Project version:',
     mainCheckTheRepo: 'Check the Repo!',
     homeWelcome: 'Hi, I\'m Daniil Ulyanov!',
-    homeDescription: 'An 18-Year-Old Frontend Developer from Russia, who loves old-school games, delicious pizza, Breakcore music and JavaScript!',
-    homeAboutMe: 'about me',
+    homeDescription: 'An 18-Year-Old Frontend Developer from Russia, who loves old school computer games, delicious pizza, Breakcore music and JavaScript!',
+    homeUnderDescription: 'Have been developing projects since 2021: TypeScript, React, Next, SCSS.',
+    homeAboutMe: 'my skills and experience',
     homeSoundCloudTitle: 'My SoundCloud Tracks!!!',
 
     aboutReturn: 'Back To Home',
@@ -13,35 +22,35 @@ const en = {
     experience: {
         html: {
             kn: 'HTML | BEM',
-            t: '3 years'
+            t: yearsEng(startDate)
         },
         css: {
-            kn: 'CSS-Modules | SCSS-Modules',
-            t: '3 years'
+            kn: 'CSS/SCSS + Modules',
+            t: yearsEng(startDate)
         },
         js: {
             kn: 'JavaScript',
-            t: '3 years'
+            t: yearsEng(startDate)
         },
         ts: {
-            kn: 'TypeScript',
-            t: '7 months'
+            kn: 'TypeScript | TSX | Next.js',
+            t: yearsEng(typescriptDate)
         },
         jsx: {
-            kn: 'JSX | TSX | Zustand | RTK + Query | Styled-Components | React-Hook-Form | Next.js',
-            t: '2 years'
+            kn: 'React.js',
+            t: yearsEng(ttDate)
         },
         git: {
             kn: 'Git | GitHub | GitLab',
-            t: '2 years'
+            t: yearsEng(ttDate)
         },
         vite: {
             kn: 'Webpack | Vite',
-            t: '1 year'
+            t: yearsEng(ttDate)
         },
         fb: {
             kn: 'Firebase',
-            t: '1 year'
+            t: yearsEng(ttDate)
         }
     },
 
@@ -49,33 +58,33 @@ const en = {
     worked: {
         freelance: {
             type: 'Freelance',
-            date: 'Since 21.06.2021',
+            date: 'since 21.06.2021',
             skills: 'HTML, CSS, SCSS, JavaScript, TypeScript, React, Styled-components',
-            description: 'Freelancing basically started my work as a developer, where I managed to practice with a lot of technologies that I know now. I was engaged in tasks from small fixes on pages to rewriting small stores from scratch on TypeScript + React.'
+            description: 'I gained my first experience as a freelance developer. I managed to practice with a lot of technologies. I was involved in a variety of tasks: starting from fixing bugs in CSS to refactoring the code of online shops from scratch using TypeScript + React.'
         },
         linkiiie: {
             type: 'Linkiiie.ru',
-            date: '19.12.2021 - 13.07.2022',
-            skills: 'JavaScript, SCSS, БЭМ, Github, Figma',
-            description: 'The company was essentially a startup, which was a large aggregator of links all over the Internet, which could only give out a sea of free tutorials by entering information into the search. My responsibilities included developing a project based on the finished design, as well as direct participation in the code review'
+            date: '19.12.2021 to 13.07.2022',
+            skills: 'JavaScript, SCSS, BEM, GitHub, Figma',
+            description: 'I was involved in the development of a startup for aggregating links to useful tutorials. Specifically, I was engaged in code reviews and frontend development based on Figma designs. I managed to gain teamwork experience through close interaction with backend developers.'
         },
         desc: {
             type: 'DESC-Studio.ru',
-            date: '22.08.2022 - 27.06.2023',
-            skills: 'HTML, CSS, SCSS (+modules), JavaScript, TypeScript, React (v.18), Github',
-            description: 'We worked in an outsourcing team. My responsibilities included participating in a code review on Github, communicating with the team as a whole, and working with various technologies (from "make a letter" to large projects on React+ TypeScript). During his work, he was able to gain a lot of experience, as well as knowledge that helps in solving current tasks at work.'
+            date: '22.08.2022 to 27.06.2023',
+            skills: 'HTML, CSS, SCSS (+modules), JavaScript, TypeScript, React (v.18), GitHub',
+            description: 'I was part of an outsourced web development team. My responsibilities varied by projects: participating in code reviews, frontend development based on Figma designs (using React + TypeScript), and email layouts for mailings. I was interacting with designers, teamleader and backend developers. I managed to consolidate my knowledge of React, JavaScript and TypeScript, as well as gain experience with multilingual websites.'
         },
         qchart: {
             type: 'QChart.io',
-            date: '09.11.2022 - 10.01.2023',
-            skills: 'TypeScript, React (v.17), Styled-Components, WebSockets, Github, Figma',
-            description: 'Qchart.io - a project (a small startup) in which I was able to participate as a developer. In 2 months, we developed a product that was a visual demonstration and dynamics of the exchange rate of coins, as well as a forecast for a drop or increase in the price of each. The data was built on the basis of Websockets when the backend itself was developed on Nest.js, which was then stretched over the Reactor. There were several people in the project, and in a fairly short period of time I was able to participate in a large number of code reviews.'
+            date: '09.11.2022 to 10.01.2023',
+            skills: 'TypeScript, React (v.17), Styled-Components, WebSockets, GitHub, Figma',
+            description: 'I managed to participate in the frontend development of a stock analytics startup. The project was written in React with the backend based on Nest.js with data aggregation over WebSockets. I was able to build the frontend using a combination of React + TypeScript + Zustand and participate in a lot of code reviews.'
         },
         slex: {
             type: 'Slex.io | Slavi.io',
             date: 'Since 18.08.2023',
-            skills: 'TypeScript, React (v.18), Next.js, SCSS modules, Gitlab',
-            description: 'Work is underway on Next.js + TypeScript. There are several developers in the team, including me, and my job involves a large number of tasks: from component layout to working with a large number of factories processing APIs, but always participating in a code review on Gitlab.'
+            skills: 'TypeScript, React (v.18), Next.js, SCSS-modules, GitLab',
+            description: 'I am actively involved in the frontend development of two projects: a cryptocurrency wallet and a stock exchange based on Next.js + TypeScript. The project allows me to reveal my skills in a variety of tasks: from component layout to working with a large number of factories processing APIs. I am constantly participating in code reviews on GitLab.'
         }
     }
 };
@@ -86,8 +95,9 @@ const ru = {
     mainProjectVersion: 'Версия проекта:',
     mainCheckTheRepo: 'Глянуть Репозиторий!',
     homeWelcome: 'Привет, я Даниил Ульянов!',
-    homeDescription: '18-летний Фронтенд Разработчик из России, который очень любит олд-скульные игры, вкусную пиццу, Брейккор и Джаваскрипт!',
-    homeAboutMe: 'обо мне',
+    homeDescription: '18-летний фронтенд-разработчик из России, который очень любит олдскульные игры, вкусную пиццу, брейккор и JavaScript!',
+    homeUnderDescription: 'Разрабатываю проекты с 2021 года: TypeScript, React, Next, SCSS.',
+    homeAboutMe: 'мои опыт и умения',
     homeSoundCloudTitle: 'Мой Саундклауд!!!',
 
     aboutReturn: 'Вернуться домой',
@@ -95,35 +105,35 @@ const ru = {
     experience: {
         html: {
             kn: 'HTML | BEM',
-            t: '3 года'
+            t: yearsRus(startDate)
         },
         css: {
-            kn: 'CSS-Modules | SCSS-Modules',
-            t: '3 года'
+            kn: 'CSS/SCSS + Modules',
+            t: yearsRus(startDate)
         },
         js: {
             kn: 'JavaScript',
-            t: '3 года'
+            t: yearsRus(startDate)
         },
         ts: {
-            kn: 'TypeScript',
-            t: '7 месяцев'
+            kn: 'TypeScript | TSX | Next.js',
+            t: yearsRus(typescriptDate)
         },
         jsx: {
-            kn: 'JSX | TSX | Zustand | RTK + Query | Styled-Components | React-Hook-Form | Next.js',
-            t: '2 года'
+            kn: 'React.js',
+            t: yearsRus(ttDate)
         },
         git: {
             kn: 'Git | GitHub | GitLab',
-            t: '2 года'
+            t: yearsRus(ttDate)
         },
         vite: {
             kn: 'Webpack | Vite',
-            t: '1 год'
+            t: yearsRus(ttDate)
         },
         fb: {
             kn: 'Firebase',
-            t: '1 год'
+            t: yearsRus(ttDate)
         }
     },
 
@@ -133,31 +143,31 @@ const ru = {
             type: 'Фриланс',
             date: 'c 21.06.2021',
             skills: 'HTML, CSS, SCSS, JavaScript, TypeScript, React, Styled-components',
-            description: 'На фрилансе в принципе началась моя работа как разработчика, где удалось попрактиковаться с большим количеством технологий, которые я знаю сейчас. Занимался тасками от маленьких фиксов по страничкам до переписывания небольших магазинов с нуля на TypeScript + React.'
+            description: 'Я обрёл свой первый опыт в качестве фриланс-разработчика. Мне удалось попрактиковаться с большим количеством технологий. Занимался простыми и сложными тасками: от CSS-багфиксов до переписывания небольших магазинов с нуля на TypeScript + React.'
         },
         linkiiie: {
             type: 'Linkiiie.ru',
-            date: '19.12.2021 - 13.07.2022',
-            skills: 'JavaScript, SCSS, БЭМ, Github, Figma',
-            description: 'Компания по сути своей являлось стартапом, который представлял собой большой агрегатор ссылок по всему Интернету, который мог лишь по вводу информации в поиск выдать море бесплатных туториалов. В мои обязанности входило разрабатывать проект по готовому дизайну, а также непосредственное участие в code-review'
+            date: '19.12.2021 по 13.07.2022',
+            skills: 'JavaScript, SCSS, БЭМ, GitHub, Figma',
+            description: 'Я участвовал в разработке стартапа по агрегации ссылок на полезные руководства. В частности, занимался код-ревью и фронтенд-разработкой по дизайну на Figma. Обрёл опыт командной работы благодаря тесному взаимодействию с бэкенд-разработчиками.'
         },
         desc: {
             type: 'DESC-Studio.ru',
-            date: '22.08.2022 - 27.06.2023',
-            skills: 'HTML, CSS, SCSS (+modules), JavaScript, TypeScript, React (v.18), Github',
-            description: 'Работали в команде на аутсорсе. В моих обязанностях было участие в code-review на Github, общение с командой в целом, работа велась с различными технологиями (от "сделайте письмо" до больших проектов на React + TypeScript). За время работы смог получить большое количество опыта, а также знаний, которые помогают при решении нынешних задач на работе.'
+            date: '22.08.2022 по 27.06.2023',
+            skills: 'HTML, CSS, SCSS (+modules), JavaScript, TypeScript, React (v.18), GitHub, i18-next',
+            description: 'Я был частью команды по веб-разработке на аутсорсе. Мои обязанности различались по проектам: участие в код-ревью, фронтенд-разработке по дизайну Figma (на React + TypeScript) и вёрстке писем для рассылок. Взаимодействовал с дизайнерами, тимлидом и бэкенд-разработчиками. Удалось закрепить знания React, JavaScript и TypeScript, а также обрести опыт работы с многоязычными сайтами.'
         },
         qchart: {
             type: 'QChart.io',
-            date: '09.11.2022 - 10.01.2023',
-            skills: 'TypeScript, React (v.17), Styled-Components, WebSockets, Github, Figma',
-            description: 'Qchart.io - проект (небольшой стартап), в котором я смог принять участие как разработчик. За 2 месяца разработали продукт, который представлял собой наглядную демонстрацию и динамику курса монет, а также прогноз на падение или рост цены каждой. Данные строились на основе Вебсокетов, когда сам бекенд был разработан на Nest.js, который затем натягивался на Реакт. В проекте было несколько человек, а за достаточно короткий промежуток времени смог поучаствовать в большом количестве code-review.'
+            date: '09.11.2022 по 10.01.2023',
+            skills: 'TypeScript, React (v.17), Styled-Components, WebSockets, GitHub, Figma, Zustand',
+            description: 'Я смог принять участие в фронтенд-разработке стартапа по биржевой аналитике. Проект был написан на React с бэкендом на Nest.js с агрегацией данных через веб-сокеты. Мне удалось создать фронтенд на сочетании React + TypeScript + Zustand и поучаствовать с большим количеством код-ревью.'
         },
         slex: {
             type: 'Slex.io | Slavi.io',
             date: 'c 18.08.2023',
-            skills: 'TypeScript, React (v.18), Next.js, SCSS modules, Gitlab',
-            description: 'Работа ведётся на Next.js + TypeScript. В команде есть несколько разработчиков, включая меня, и моя работа имеет в себе большое количество заданий: от вёрстки компонентов до работы с большим количеством фабрик, обрабатывающих api, но всегда - участие в code-review на Gitlab.'
+            skills: 'TypeScript, React (v.18), Next.js, SCSS-modules, GitLab, i18-next',
+            description: 'Я активно участвую в фронтенд-разработке двух проектов: кошелька и обменника криптовалют на Next.js + TypeScript. Проект позволяет раскрыть мои навыки в различных тасках: от вёрстки компонентов до работы с большим количеством фабрик, обрабатывающих API. Постоянно участвую в код-ревью на GitLab. '
         }
     }
 };
