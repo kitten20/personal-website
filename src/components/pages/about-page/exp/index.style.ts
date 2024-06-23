@@ -20,6 +20,8 @@ export const ExpTitle = styled.p`
     text-transform: capitalize;
     font-size: var(--title-size);
     text-align: center;
+
+    margin-bottom: 7px;
 `;
 
 export const ExpFrame = styled(Frame)`

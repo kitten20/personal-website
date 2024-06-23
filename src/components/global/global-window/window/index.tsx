@@ -1,4 +1,4 @@
-import { Outlet, Link, useLocation } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 import { vars } from 'global/reusable';
 
@@ -17,6 +17,7 @@ import * as S from './index.styles';
 function WindowHeader() {
     const location = useLocation();
     const { languages } = vars;
+    const pathnameSplitted = location.pathname.split('/')[1];
 
     const changeLanguage = (path: string) => {
         const locationSplitted = location.pathname.split('/').filter(i => i);
@@ -28,12 +29,12 @@ function WindowHeader() {
         <S.WindowHeaderStyled>
             <S.WindowHeaderColumn>
                 <span>Kitten20.exe</span>
-                <Link to={changeLanguage(languages[0])} replace>
+                <S.WindowHeaderLinkFlag to={changeLanguage(languages[0])} replace checked={pathnameSplitted === 'ru'}>
                     <img src={iconRu} alt={'rus'} />
-                </Link>
-                <Link to={changeLanguage(languages[1])} replace>
+                </S.WindowHeaderLinkFlag>
+                <S.WindowHeaderLinkFlag to={changeLanguage(languages[1])} replace checked={pathnameSplitted === 'en'}>
                     <img src={iconGb} alt={'gb'} />
-                </Link>
+                </S.WindowHeaderLinkFlag>
             </S.WindowHeaderColumn>
             <Button onClick={() => window.location.href = 'https://github.com/kitten20'}>
                 <S.CloseIcon />

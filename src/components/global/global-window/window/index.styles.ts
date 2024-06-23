@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styled from 'styled-components';
 
 import { Window as WindowReact95, WindowHeader as WindowHeaderReact95, WindowContent as WindowContent95, ScrollView as ScrollView95 } from 'react95';
@@ -48,6 +50,13 @@ export const WindowHeaderColumn = styled.span`
             height: 22px;
             margin-left: 5px;
         }
+    }
+`;
+
+export const WindowHeaderLinkFlag = styled(Link)<{checked: boolean}>`
+    img {
+        border: ${props => props.checked ? '1px solid white' : ''};
+        border-radius: ${props => props.checked ? '5px' : ''};
     }
 `;
 

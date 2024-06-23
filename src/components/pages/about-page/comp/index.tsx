@@ -12,9 +12,9 @@ interface IW {
 const CompBlock = ({w}: {w: IW}) => {
     return (
         <S.CompBlock>
-            <p>-- {w.type} - {w.date}</p>
-            <p>- Stack: {w.skills}</p>
-            <p>- {w.description}</p>
+            <p>• {w.type} — {w.date}</p>
+            <p style={{color: '#1dffdc'}}>Stack: {w.skills}.</p>
+            <p>{w.description}</p>
         </S.CompBlock>
     );
 };
