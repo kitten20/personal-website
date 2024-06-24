@@ -1,6 +1,5 @@
-import { RowWrapper } from 'global/reusable';
+import { RowWrapper, Link } from 'global/reusable';
 import { Frame } from 'react95';
-import { Link } from 'react-router-dom';
 
 import styled from 'styled-components';
 
