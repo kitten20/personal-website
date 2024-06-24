@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom';
-
-import { hooks } from 'global/reusable';
+import { hooks, Link } from 'global/reusable';
 import * as S from './index.style';
 
 function Welcome() {
