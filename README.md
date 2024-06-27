@@ -8,7 +8,7 @@
 
 <h3>😉 And don't be shy! It's time to see the site itself!<h3>
 
-### [*- Click here -*](https://kitten20.vercel.app/en)
+### [*- Click here -*](https://scriptkitty.ru)
 
 <h3>---</h3>
 
@@ -21,4 +21,4 @@
 
 <h3>😉 И не стесняйтесь! Пора увидеть сам сайт в действии!<h3>
 
-### [*- Тык сюда -*](https://kitten20.vercel.app/ru)
+### [*- Тык сюда -*](https://scriptkitty.ru/ru)
