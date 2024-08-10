@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { WindowContainer, ContextProvider } from 'global';
-import { HomePage, AboutPage } from './pages';
+import { HomePage } from './pages';
 
 import { vars } from 'global/reusable';
 
@@ -23,7 +23,7 @@ function App() {
                 {languages.map(path => 
                     <Route path={'/' + path} element={<Language />}>
                         <Route index element={<HomePage />} />
-                        <Route path='about' element={<AboutPage />} />
+                        {/* <Route path='about' element={<AboutPage />} /> */}
                     </Route>
                 )}
                 <Route path='*' element={<Navigate to ={languages[1]} replace={true} />} />

@@ -21,6 +21,7 @@ const GlobalStyles = createGlobalStyle`
         --subname-size: 20px;
         --description-size: 18px;
         --link-color: #0010d1;
+        --light-blue-color: #1dffdc;
     }
 
     #root {

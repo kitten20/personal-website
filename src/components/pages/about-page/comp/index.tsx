@@ -1,5 +1,7 @@
 import { hooks } from 'global/reusable';
 
+import Exp from '../exp';
+
 import * as S from './index.style';
 
 interface IW {
@@ -13,7 +15,7 @@ const CompBlock = ({w}: {w: IW}) => {
     return (
         <S.CompBlock>
             <p>• {w.type} — {w.date}</p>
-            <p style={{color: '#1dffdc'}}>Stack: {w.skills}.</p>
+            <p style={{color: 'var(--light-blue-color)'}}>Stack: {w.skills}.</p>
             <p>{w.description}</p>
         </S.CompBlock>
     );
@@ -24,9 +26,10 @@ function Comp() {
         w = t.worked;
 
     return ( 
-        <S.Comp>
-            <S.CompTitle>{t.aboutWorked}</S.CompTitle>
+        <S.Comp id="skills">
+            <S.DescriptionLinkAbout>{t.homeAboutMe}</S.DescriptionLinkAbout>
             <S.CompFrame>
+                <Exp/>
                 <CompBlock w={w.freelance} />
                 <CompBlock w={w.linkiiie} />
                 <CompBlock w={w.desc} />

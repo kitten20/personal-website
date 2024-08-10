@@ -1,6 +1,6 @@
 const currentDate = new Date().getFullYear();
 const startDate = currentDate - new Date(2021, 6, 13).getFullYear();
-const typescriptDate = currentDate - new Date(2022, 8, 22).getFullYear();
+const typescriptDate = currentDate - new Date(2023, 8, 17).getFullYear();
 const ttDate = currentDate - new Date(2022, 1, 15).getFullYear();
 
 const yearsEng = (date: number) => `${date}+ years`;
@@ -13,7 +13,7 @@ const en = {
     mainCheckTheRepo: 'Check the Repo!',
     homeWelcome: 'Hi, I\'m Daniil Ulyanov!',
     homeDescription: 'An 18-Year-Old Frontend Developer from Russia, who loves old school computer games, delicious pizza, Breakcore music and JavaScript!',
-    homeUnderDescription: 'Developing projects since 2021: TypeScript, React, Next, SCSS.',
+    homeUnderDescription: 'Developing projects since 2021.',
     homeAboutMe: 'my skills and experience',
     homeSoundCloudTitle: 'My SoundCloud Tracks!!!',
 
@@ -96,7 +96,7 @@ const ru = {
     mainCheckTheRepo: 'Глянуть Репозиторий!',
     homeWelcome: 'Привет, я Даниил Ульянов!',
     homeDescription: '18-летний фронтенд-разработчик из России, который очень любит олдскульные игры, вкусную пиццу, брейккор и JavaScript!',
-    homeUnderDescription: 'Разрабатываю проекты с 2021 года: TypeScript, React, Next, SCSS.',
+    homeUnderDescription: 'Разрабатываю проекты с 2021 года.',
     homeAboutMe: 'мои опыт и умения',
     homeSoundCloudTitle: 'Мой Саундклауд!!!',
 

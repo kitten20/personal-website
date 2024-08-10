@@ -4,7 +4,7 @@ import { Frame } from 'react95';
 import { RowWrapper, vars } from 'global/reusable';
 
 export const Cmd = styled(RowWrapper)`
-    margin: 8px 0;
+    margin-top: 8px;
 
     @media (max-width: ${vars.size.xs}) {
         margin-bottom: 2px;

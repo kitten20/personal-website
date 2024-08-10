@@ -1,6 +1,10 @@
 import { hooks } from 'global/reusable';
 import * as S from './index.style';
 
+import sassIcon from './assets/sass.webp';
+import tsIcon from './assets/typescript.png';
+import reactIcon from './assets/react.png';
+
 function Welcome() {
     const { t } = hooks.useTranslates();
 
@@ -24,8 +28,24 @@ function Welcome() {
                     <S.DescriptionContainer>
                         <p>{t.homeDescription}</p>
                         <p>{t.homeUnderDescription}</p>
-                        <S.DescriptionLinkAbout to='about#skills' className='about-me'>{t.homeAboutMe}</S.DescriptionLinkAbout>
                     </S.DescriptionContainer>
+
+                    <S.Tabs>
+                        <S.TabSASS to='#skills'>
+                            <img src={sassIcon} alt="sassIcon" />
+                            <p>SCSS</p>
+                        </S.TabSASS>
+
+                        <S.TabTS to='#skills'>
+                            <img src={tsIcon} alt="tsIcon" />
+                            <p>Typescript</p>
+                        </S.TabTS>
+
+                        <S.TabReact to='#skills'>
+                            <img src={reactIcon} alt="reactIcon" />
+                            <p>React</p>
+                        </S.TabReact>
+                    </S.Tabs>
                 </S.TitleTopWrapper>
             </S.WelcomeColumn>
         </S.Welcome>

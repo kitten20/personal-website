@@ -1,5 +1,5 @@
 import { RowWrapper, LinkAnchor } from 'global/reusable';
-import { Frame } from 'react95';
+// import { Frame } from 'react95';
 
 import styled from 'styled-components';
 
@@ -23,11 +23,15 @@ export const ExpTitle = styled.p`
     margin-bottom: 7px;
 `;
 
-export const ExpFrame = styled(Frame)`
+// export const ExpFrame = styled(Frame)`
+export const ExpFrame = styled.div`
     background-color: black;
+    border-bottom: 2px dashed var(--light-blue-color);
 
     width: 100%;
-    padding: 15px 5px;
+    /* padding: 15px 5px; */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 
     * {
         color: white;
@@ -40,4 +44,8 @@ export const ExpFrame = styled(Frame)`
             margin-bottom: 10px;
         }
     }
+`;
+
+export const ExpSpanLeft = styled.span`
+    color: var(--light-blue-color) !important;
 `;

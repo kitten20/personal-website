@@ -195,16 +195,93 @@ export const DescriptionContainer = styled.div`
     }
 `;
 
-export const DescriptionLinkAbout = styled(LinkAnchor)`
-    background: linear-gradient(to left, rgb(176, 9, 151) 0%, rgb(227, 33, 107) 10%, rgb(249, 96, 30) 25%, rgb(255, 180, 18) 40%, rgb(255, 216, 45) 50%, rgb(185, 221, 23) 61%, rgb(65, 160, 60) 75%, rgb(19, 54, 180) 90%, rgb(116, 27, 157) 100%);
-    color: white;
-    line-height: normal;
-    border: 2px solid white;
-    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+export const Tabs = styled.div`
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
 
-    padding: 6px;
+    margin-top: 15px;
+
+    @media (max-width: ${vars.size.prmd}) {
+        align-items: center;
+        flex-direction: column;
+    }
+`;
+
+export const Tab = styled(LinkAnchor)`
+    display: flex;
+    align-items: center;
+
+    padding-right: 8px;
+    box-sizing: border-box;
+    
+    border: 1px solid white;
+
+    user-select: none;
 
     &::after {
         display: none;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: uppercase;
+        font-family: 'ms_sans_serif_rus', sans-serif !important;
+        color: white;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    @media (max-width: ${vars.size.prmd}) {
+        width: 100%;
+    }
+`;
+
+export const TabSASS = styled(Tab)`
+    background-color: #cc6699;
+`;
+
+export const TabTS = styled(Tab)`
+    background-color: #2d79c7;
+
+    padding: 0 8px;
+
+    img {
+        width: 30px;
+        margin-right: 6px;
+
+        border: 1px solid white;
+        border-radius: 5px;
+    }
+
+    @media (max-width: ${vars.size.prmd}) {
+        padding: 4px;
+    }
+`;
+
+export const TabReact = styled(Tab)`
+    background-color: white;
+    border: 1px solid #80d1e6;
+
+    p {
+        color: #007391;
+    }
+
+    img {
+        animation: rotation 12s linear infinite;
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     }
 `;
