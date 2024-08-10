@@ -1,11 +1,11 @@
-import { RowWrapper, Link } from 'global/reusable';
+import { RowWrapper, LinkAnchor } from 'global/reusable';
 import { Frame } from 'react95';
 
 import styled from 'styled-components';
 
 export const Exp = styled(RowWrapper)``;
 
-export const ExpLinkHome = styled(Link)`
+export const ExpLinkHome = styled(LinkAnchor)`
     font-size: var(--description-size);
 
     display: table;

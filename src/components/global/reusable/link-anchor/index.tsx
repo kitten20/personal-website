@@ -1,10 +1,9 @@
 import { PropsWithChildren } from 'react';
-import { Link as LinkRouter, LinkProps } from 'react-router-dom';
+import { LinkProps } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
-const handleClick = () => document.getElementById('row-wrapper')?.scrollIntoView(({ behavior: 'smooth', block: 'nearest' }));
-
-function Link({children, ...linkProps}: PropsWithChildren<LinkProps>) {
-    return ( <LinkRouter {...linkProps} onClick={handleClick}>{children}</LinkRouter> );
+function LinkAnchor({children, ...linkProps}: PropsWithChildren<LinkProps>) {
+    return ( <HashLink {...linkProps} smooth>{children}</HashLink> );
 }
 
-export default Link;
+export default LinkAnchor;

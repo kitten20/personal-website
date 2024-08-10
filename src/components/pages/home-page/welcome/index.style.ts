@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { Avatar as Avatar95 } from 'react95';
-import { RowWrapper, vars } from 'global/reusable';
+import { RowWrapper, vars, LinkAnchor } from 'global/reusable';
 
 export const Welcome = styled(RowWrapper)`
     display: flex;
@@ -192,5 +192,19 @@ export const DescriptionContainer = styled.div`
         p:not(:last-child){
             margin-bottom: 6px;
         }
+    }
+`;
+
+export const DescriptionLinkAbout = styled(LinkAnchor)`
+    background: linear-gradient(to left, rgb(176, 9, 151) 0%, rgb(227, 33, 107) 10%, rgb(249, 96, 30) 25%, rgb(255, 180, 18) 40%, rgb(255, 216, 45) 50%, rgb(185, 221, 23) 61%, rgb(65, 160, 60) 75%, rgb(19, 54, 180) 90%, rgb(116, 27, 157) 100%);
+    color: white;
+    line-height: normal;
+    border: 2px solid white;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+
+    padding: 6px;
+
+    &::after {
+        display: none;
     }
 `;

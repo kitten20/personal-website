@@ -1,11 +1,11 @@
-import { hooks, Link } from 'global/reusable';
+import { hooks } from 'global/reusable';
 import * as S from './index.style';
 
 function Welcome() {
     const { t } = hooks.useTranslates();
 
     return ( 
-        <S.Welcome>
+        <S.Welcome id='#start'>
             <S.WelcomeColumn>
                 <S.Avatar square src={'https://avatars.githubusercontent.com/u/111589096?v=4'} />
             </S.WelcomeColumn>
@@ -24,7 +24,7 @@ function Welcome() {
                     <S.DescriptionContainer>
                         <p>{t.homeDescription}</p>
                         <p>{t.homeUnderDescription}</p>
-                        <Link to='about' className='about-me'>{t.homeAboutMe}</Link>
+                        <S.DescriptionLinkAbout to='about#skills' className='about-me'>{t.homeAboutMe}</S.DescriptionLinkAbout>
                     </S.DescriptionContainer>
                 </S.TitleTopWrapper>
             </S.WelcomeColumn>

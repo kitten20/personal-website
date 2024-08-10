@@ -1,14 +1,10 @@
-import { PropsWithChildren } from 'react';
+import { HTMLAttributes, PropsWithChildren } from 'react';
 
 import * as S from './index.style';
 
-interface IRowWrapperProps {
-    className?: string
-}
-
-function RowWrapper({children, className}: PropsWithChildren<IRowWrapperProps>) {
+function RowWrapper({children, ...props}: PropsWithChildren<HTMLAttributes<HTMLDivElement>>) {
     return ( 
-        <S.RowWrapper className={className} id='row-wrapper'>
+        <S.RowWrapper {...props}>
             {children}
         </S.RowWrapper>
     );

@@ -13,7 +13,7 @@ const en = {
     mainCheckTheRepo: 'Check the Repo!',
     homeWelcome: 'Hi, I\'m Daniil Ulyanov!',
     homeDescription: 'An 18-Year-Old Frontend Developer from Russia, who loves old school computer games, delicious pizza, Breakcore music and JavaScript!',
-    homeUnderDescription: 'Have been developing projects since 2021: TypeScript, React, Next, SCSS.',
+    homeUnderDescription: 'Developing projects since 2021: TypeScript, React, Next, SCSS.',
     homeAboutMe: 'my skills and experience',
     homeSoundCloudTitle: 'My SoundCloud Tracks!!!',
 

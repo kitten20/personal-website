@@ -11,8 +11,8 @@ function Exp() {
         e = t.experience;
 
     return ( 
-        <S.Exp>
-            <S.ExpLinkHome to={'/' + location.pathname.split('/').filter(i => i)[0]}>
+        <S.Exp id='skills'>
+            <S.ExpLinkHome to={'/' + location.pathname.split('/').filter(i => i)[0] + '#start'}>
                 {t.aboutReturn}
             </S.ExpLinkHome>
             <S.ExpTitle>{t.aboutTitle}</S.ExpTitle>
