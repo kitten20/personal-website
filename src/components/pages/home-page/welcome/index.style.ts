@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import { Avatar as Avatar95 } from 'react95';
-import { RowWrapper, vars, LinkAnchor } from 'global/reusable';
+import { RowWrapper, vars } from 'global/reusable';
 
 export const Welcome = styled(RowWrapper)`
     display: flex;
@@ -208,7 +208,7 @@ export const Tabs = styled.div`
     }
 `;
 
-export const Tab = styled(LinkAnchor)`
+export const Tab = styled.div`
     display: flex;
     align-items: center;
 

@@ -76,6 +76,8 @@ export const DescriptionLinkAbout = styled.p`
 
     display: inline-block;
 
+    user-select: none;
+
     @keyframes animateBg {
         0% { background-position: 100% 0%; }
         100% { background-position: 0% 0%; }
@@ -84,4 +86,10 @@ export const DescriptionLinkAbout = styled.p`
     &::after {
         display: none;
     }
+
+    @media (max-width: ${vars.size.prmd}) {
+        background-image: none;
+        background-size: 100% 100%;
+        background: linear-gradient(to left,#b00997,#e3216b,#f9601e,#ffb412,#ffd82d,#b9dd17,#41a03c,#1336b4,#741b9d,#b00997,#e3216b);
+     }
 `;

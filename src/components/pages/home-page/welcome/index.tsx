@@ -31,17 +31,17 @@ function Welcome() {
                     </S.DescriptionContainer>
 
                     <S.Tabs>
-                        <S.TabSASS to='#skills'>
+                        <S.TabSASS>
                             <img src={sassIcon} alt="sassIcon" />
                             <p>SCSS</p>
                         </S.TabSASS>
 
-                        <S.TabTS to='#skills'>
+                        <S.TabTS>
                             <img src={tsIcon} alt="tsIcon" />
                             <p>Typescript</p>
                         </S.TabTS>
 
-                        <S.TabReact to='#skills'>
+                        <S.TabReact>
                             <img src={reactIcon} alt="reactIcon" />
                             <p>React</p>
                         </S.TabReact>
