@@ -1,4 +1,4 @@
-import { PropsWithChildren, useEffect } from 'react';
+import { PropsWithChildren } from 'react';
 import { LinkProps } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
