@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { WindowContainer, ContextProvider } from 'global';
 import { HomePage } from './pages';
@@ -17,6 +18,15 @@ function Language() {
 }
 
 function App() {
+    useEffect(() => {
+        const { hash } = window.location;
+        if (hash) {
+            const id = hash.replace('#', '');
+            const element = document.getElementById(id);
+            if (element) element.scrollIntoView();
+        }
+    }, []);
+
     return (
         <ContextProvider>
             <Routes>
