@@ -1,6 +1,6 @@
 import { hooks } from 'global/reusable';
 
-import Exp from '../exp';
+import Exp from './exp';
 
 import * as S from './index.style';
 
@@ -11,25 +11,25 @@ interface IW {
     description: string;
 }
 
-const CompBlock = ({w}: {w: IW}) => {
+const CompBlock = ({ w }: { w: IW }) => {
     return (
         <S.CompBlock>
             <p>• {w.type} — {w.date}</p>
-            <p style={{color: 'var(--light-blue-color)'}}>Stack: {w.skills}.</p>
+            <p style={{ color: 'var(--light-blue-color)' }}>Stack: {w.skills}.</p>
             <p>{w.description}</p>
         </S.CompBlock>
     );
 };
 
-function Comp() {
+export function Comp() {
     const { t } = hooks.useTranslates(),
         w = t.worked;
 
-    return ( 
+    return (
         <S.Comp id="skills">
             <S.DescriptionLinkAbout>{t.homeAboutMe}</S.DescriptionLinkAbout>
             <S.CompFrame>
-                <Exp/>
+                <Exp />
                 <CompBlock w={w.freelance} />
                 <CompBlock w={w.linkiiie} />
                 <CompBlock w={w.desc} />
@@ -39,5 +39,3 @@ function Comp() {
         </S.Comp>
     );
 }
-
-export default Comp;

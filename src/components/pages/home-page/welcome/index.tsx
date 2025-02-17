@@ -5,7 +5,7 @@ import sassIcon from './assets/sass.webp';
 import tsIcon from './assets/typescript.png';
 import reactIcon from './assets/react.png';
 
-function Welcome() {
+export function Welcome() {
     const { t } = hooks.useTranslates();
 
     return ( 
@@ -51,5 +51,3 @@ function Welcome() {
         </S.Welcome>
     );
 }
-
-export default Welcome;

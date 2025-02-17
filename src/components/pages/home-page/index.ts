@@ -1,5 +1,4 @@
-import Welcome from './welcome';
-import Cmd from './cmd';
-import Sound from './sound';
-
-export { Welcome, Cmd, Sound };
+export * from './cmd';
+export * from './comp';
+export * from './sound';
+export * from './welcome';

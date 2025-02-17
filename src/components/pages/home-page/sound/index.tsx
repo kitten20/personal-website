@@ -2,7 +2,7 @@ import { hooks } from 'global/reusable';
 
 import * as S from './index.style';
 
-function Sound() {
+export function Sound() {
     const { t } = hooks.useTranslates();
 
     return ( 
@@ -17,5 +17,3 @@ function Sound() {
         </S.Sound>
     );
 }
-
-export default Sound;

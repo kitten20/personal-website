@@ -24,15 +24,6 @@ const GlobalStyles = createGlobalStyle`
         --light-blue-color: #1dffdc;
     }
 
-    #root {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-
-        height: ${window.innerHeight}px;
-    }
-
     * {
         font-family: 'ms_sans_serif', 'ms_sans_serif_rus' !important;
     }
