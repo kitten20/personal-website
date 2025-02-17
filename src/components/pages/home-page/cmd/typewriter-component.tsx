@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 import styles from './style.module.css';
 
 // Please, don't judge me. This typewriter is a freaking bag fulled of crap
-function TypewriterComponent() {
+function NewsTypewriter() {
     const { news, locationIsChanged } = useContext(Context);
     
     return <Typewriter
@@ -47,4 +47,4 @@ function TypewriterComponent() {
     />;
 }
 
-export default TypewriterComponent;
+export default NewsTypewriter;

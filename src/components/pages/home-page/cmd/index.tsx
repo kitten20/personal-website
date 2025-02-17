@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Context } from 'global';
 
-import TypewriterComponent from 'typewriter-effect';
+import NewsTypewriter from './typewriter-component';
 
 import * as S from './index.style';
 
@@ -12,7 +12,7 @@ export function Cmd() {
         <S.Cmd>
             {news[0]?.date ? (
                 <S.CmdFrame variant='field'>
-                    <TypewriterComponent />
+                    <NewsTypewriter />
                 </S.CmdFrame>
             ) : (
                 <S.CmdFrame />
