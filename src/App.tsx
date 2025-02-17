@@ -6,6 +6,8 @@ import HomePage from './pages/home-page';
 
 import { vars } from 'global/reusable';
 
+import './main.styles.css';
+
 const { languages } = vars;
 
 function Language() {

@@ -7,7 +7,6 @@ import { Window as WindowReact95, WindowHeader as WindowHeaderReact95, WindowCon
 import { vars } from 'global/reusable';
 
 export const Window = styled(WindowReact95)`
-    width: 100%;
     height: calc(100% - 70px);
     max-width: 1482px;
     max-height: 954px;

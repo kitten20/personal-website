@@ -10,7 +10,7 @@ export function Cmd() {
     
     return (
         <S.Cmd>
-            {news[0].date ? (
+            {news[0]?.date ? (
                 <S.CmdFrame variant='field'>
                     <TypewriterComponent />
                 </S.CmdFrame>
