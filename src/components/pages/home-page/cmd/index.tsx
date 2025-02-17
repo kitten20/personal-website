@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { Context } from 'global';
 
-import NewsTypewriter from './typewriter-component';
+import NewsTypewriter from './news-typewriter';
 
 import * as S from './index.style';
 
