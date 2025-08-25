@@ -1,24 +1,69 @@
-![alt text](https://raw.githubusercontent.com/kitten20/personal-website/master/public/og-photo.png)
+# React + TypeScript + Vite
 
-## 🇬🇧 Hi! I'm Daniil! 👋Welcome to my personal website's repository! :D
-<h3>Couple of words about it!</h3>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-- ⚙ Project is made with: Love, Vite, TypeScript, React, Styled-Components and React-Router-Dom.
-- 💅 The whole website is made using [React95-io](https://github.com/react95-io/React95/). Thank them so much for such a cool addition for styled-components!
+Currently, two official plugins are available:
 
-<h3>😉 And don't be shy! It's time to see the site itself!<h3>
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-### [*- Click here -*](https://scriptkitty.ru)
+## Expanding the ESLint configuration
 
-<h3>---</h3>
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## 🇷🇺 Привет! Меня зовут Даниил! 👋Добро пожаловать на репозиторий моего вебсайта! :D
+```js
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-<h3>Парочку слов о нём!</h3>
+      // Remove tseslint.configs.recommended and replace with this
+      ...tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      ...tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      ...tseslint.configs.stylisticTypeChecked,
 
-- ⚙ Проект сделан с Любовью, Vite, TypeScript, React, Styled-Components и React-Router-Dom.
-- 💅 Сам сайт сделан с помощью [React95-io](https://github.com/react95-io/React95/). Огромное им спасибо за такое классное дополнение к styled-somponents!
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
 
-<h3>😉 И не стесняйтесь! Пора увидеть сам сайт в действии!<h3>
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-### [*- Тык сюда -*](https://scriptkitty.ru/ru)
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default tseslint.config([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
