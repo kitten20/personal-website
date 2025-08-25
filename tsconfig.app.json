@@ -21,7 +21,14 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "modules/*": ["src/modules/*"],
+      "variables": ["src/utils/variables/index.ts"],
+      "components/*": ["src/components/*"],
+    },
   },
   "include": ["src"]
 }
