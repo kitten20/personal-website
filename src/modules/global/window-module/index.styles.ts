@@ -33,7 +33,7 @@ export const WindowHeader = styled(WindowHeaderRaw)`
 export const WindowContent = styled(WindowContentRaw)`
     padding: 0;
     height: calc(100% - 40px);
-    max-height: 87.5vh;        
+    max-height: 87.5dvh;        
 
     overflow: auto;
 `;

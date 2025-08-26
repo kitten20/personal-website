@@ -4,7 +4,12 @@ import * as S from './index.styles';
 
 import jsIcon from 'assets/table-icons/js-icon.png';
 import tsIcon from 'assets/table-icons/ts-icon.png';
-import reactIcon from 'assets/table-icons/react-icon.jpg';
+import reactIcon from 'assets/table-icons/react-icon.png';
+import nextjsIcon from 'assets/table-icons/nextjs-icon.png';
+import githubIcon from 'assets/table-icons/github-icon.png';
+import gitlabIcon from 'assets/table-icons/gitlab-icon.png';
+import scssIcon from 'assets/table-icons/scss-icon.png';
+import figmaIcon from 'assets/table-icons/figma-icon.png';
 
 const age = new Date().getFullYear() - new Date('2006-07-31').getFullYear();
 const rows: IRowProp[] = [
@@ -14,19 +19,14 @@ const rows: IRowProp[] = [
         experienceSince: new Date('2021-06-21').getFullYear()
     },
     {
-        imgSrc: tsIcon,
-        name: 'TypeScript',
-        experienceSince: new Date('2023-08-18').getFullYear()
-    },
-    {
         imgSrc: reactIcon,
         name: 'React',
         experienceSince: new Date('2022-11-09').getFullYear()
     },
     {
-        imgSrc: jsIcon,
-        name: 'JavaScript',
-        experienceSince: new Date('2021-06-21').getFullYear()
+        imgSrc: scssIcon,
+        name: 'SCSS',
+        experienceSince: new Date('2022-12-19').getFullYear()
     },
     {
         imgSrc: tsIcon,
@@ -34,14 +34,24 @@ const rows: IRowProp[] = [
         experienceSince: new Date('2023-08-18').getFullYear()
     },
     {
-        imgSrc: reactIcon,
-        name: 'React',
-        experienceSince: new Date('2022-11-09').getFullYear()
+        imgSrc: nextjsIcon,
+        name: 'Next.js',
+        experienceSince: new Date('2023-08-18').getFullYear()
     },
     {
-        imgSrc: jsIcon,
-        name: 'JavaScript',
-        experienceSince: new Date('2021-06-21').getFullYear()
+        imgSrc: githubIcon,
+        name: 'Github',
+        experienceSince: new Date('2021-01-16').getFullYear()
+    },
+    {
+        imgSrc: gitlabIcon,
+        name: 'Gitlab',
+        experienceSince: new Date('2023-08-18').getFullYear()
+    },
+    {
+        imgSrc: figmaIcon,
+        name: 'Figma',
+        experienceSince: new Date('2021-02-05').getFullYear()
     },
 ];
 

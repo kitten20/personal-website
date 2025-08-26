@@ -1,7 +1,7 @@
 import type { PropsWithChildren } from 'react';
 
 import * as S from './index.styles';
-import { Button} from 'react95';
+import { Button } from 'react95';
 
 function WindowModule({ children }: PropsWithChildren) {
     return (

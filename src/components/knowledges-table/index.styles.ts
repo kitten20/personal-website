@@ -36,6 +36,12 @@ export const TableRow = styled(TableRowRaw)`
     width: 100%;
 
     display: flex;
+
+    &:hover {
+        img {
+            filter: invert(1);
+        }
+    }
 `;
 
 export const TableHeadCell = styled(TableHeadCellRaw)`
@@ -111,5 +117,5 @@ export const TableDataCell = styled(TableDataCellRaw)`
 `;
 
 export const TableDataCellIcon = styled.img`
-    width: 35px;
+    height: 34px;
 `;
