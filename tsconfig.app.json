@@ -28,6 +28,7 @@
       "modules/*": ["src/modules/*"],
       "variables": ["src/utils/variables/index.ts"],
       "components/*": ["src/components/*"],
+      "assets/*": ["src/assets/*"],
     },
   },
   "include": ["src"]

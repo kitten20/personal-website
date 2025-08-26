@@ -1,9 +1,10 @@
 import WindowModule from 'modules/global/window-module';
+import WelcomeModule from 'modules/pages/main-page/welcome-module';
 
 function MainPage() {
     return ( 
         <WindowModule>
-            <p>Test</p>
+            <WelcomeModule />
         </WindowModule>
     );
 }

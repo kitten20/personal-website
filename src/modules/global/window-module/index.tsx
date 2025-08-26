@@ -1,9 +1,9 @@
 import type { PropsWithChildren } from 'react';
 
 import * as S from './index.styles';
-import { Button } from 'react95';
+import { Button} from 'react95';
 
-function WindowModule({ children } : PropsWithChildren) {
+function WindowModule({ children }: PropsWithChildren) {
     return (
         <S.Window>
             <S.WindowHeader>
@@ -12,9 +12,11 @@ function WindowModule({ children } : PropsWithChildren) {
                     <S.CloseIcon />
                 </Button>
             </S.WindowHeader>
-            <S.WindowContent>
-                {children}
-            </S.WindowContent>
+            <S.ScrollView>
+                <S.WindowContent>
+                    {children}
+                </S.WindowContent>
+            </S.ScrollView>
         </S.Window>
     );
 }

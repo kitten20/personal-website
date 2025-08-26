@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
 
     :root {
         --title-size: 30px;
-        --subname-size: 20px;
+        --sub-size: 18px;
         --description-size: 18px;
         --link-color: #0010d1;
         --light-blue-color: #1dffdc;
@@ -34,9 +34,19 @@ const GlobalStyles = createGlobalStyle`
 
     * {
         font-family: 'ms_sans_serif', 'ms_sans_serif_rus' !important;
+
+        @media (max-width: ${size.prmd}) {
+            &::-webkit-scrollbar {
+                width: 13px !important;
+            }
+
+            &::-webkit-scrollbar-button {
+                display: none !important;
+            }
+        }
     }
 
-    p, a  {
+    p, a, h1, h2  {
         font-weight: bold;
         color: black;
         letter-spacing: 1px;
@@ -64,15 +74,13 @@ const GlobalStyles = createGlobalStyle`
     @media(max-width: ${size.md}) {
         :root {
             --title-size: 22px;
-            --subname-size: 18px;
-            --description-size: 18px;
+            --sub-size: 16px;
         }
     }
 
-    @media (max-width: ${size.sm}) {
+    @media (max-width: ${size.prmd}) {
         :root {
             --title-size: 19px;
-            --subname-size: 16px;
             --description-size: 15px;
         }
     }
@@ -80,7 +88,7 @@ const GlobalStyles = createGlobalStyle`
     @media (max-width: ${size.xs}) {
         :root {
             --title-size: 17px;
-            --subname-size: 13px;
+            --sub-size: 13px;
             --description-size: 13px;
         }
     }

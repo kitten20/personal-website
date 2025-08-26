@@ -1,7 +1,8 @@
 import {
     Window as WindowRaw,
     WindowHeader as WindowHeaderRaw,
-    WindowContent as WindowContentRaw
+    WindowContent as WindowContentRaw,
+    ScrollView as ScrollViewRaw,
 } from 'react95';
 
 import styled from 'styled-components';
@@ -30,7 +31,19 @@ export const WindowHeader = styled(WindowHeaderRaw)`
 `;
 
 export const WindowContent = styled(WindowContentRaw)`
-    padding: 4px;
+    padding: 0;
+    height: calc(100% - 40px);
+    max-height: 87.5vh;        
+
+    overflow: auto;
+`;
+
+export const ScrollView = styled(ScrollViewRaw)`
+    padding: 0px 2px;
+
+    & > div {
+        padding-right: 0;
+    }
 `;
 
 export const CloseIcon = styled.span`
