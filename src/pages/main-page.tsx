@@ -6,6 +6,7 @@ function MainPage() {
         <WindowModule>
             <PMImport.WelcomeModule />
             <PMImport.ExperienceModule />
+            <PMImport.ContactsModule />
         </WindowModule>
     );
 }

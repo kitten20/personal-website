@@ -35,6 +35,8 @@ const GlobalStyles = createGlobalStyle`
     * {
         font-family: 'ms_sans_serif', 'ms_sans_serif_rus' !important;
 
+        user-select: none;
+
         @media (max-width: ${size.prmd}) {
             &::-webkit-scrollbar {
                 width: 13px !important;

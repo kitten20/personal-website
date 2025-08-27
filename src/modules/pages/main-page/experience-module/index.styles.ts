@@ -1,7 +1,6 @@
 import { Frame } from 'react95';
 
 import styled from 'styled-components';
-
 import { size } from 'variables';
 
 export const ExperienceModule = styled(Frame)`

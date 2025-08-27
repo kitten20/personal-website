@@ -24,7 +24,7 @@ function KnowledgesTable({ rows }: { rows: IKnowledgesRowProp[] }) {
                         <S.TableRow>
                             <S.TableDataCell>
                                 <S.TableDataCellIcon
-                                    src={row.imgSrc} alt={row.imgSrc}
+                                    src={row.imgSrc} alt={row.imgSrc} draggable={false}
                                 />
                             </S.TableDataCell>
                             <S.TableDataCell>{row.name}</S.TableDataCell>
