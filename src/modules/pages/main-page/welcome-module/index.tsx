@@ -1,4 +1,6 @@
-import { type IRowProp } from 'components/knowledges-table';
+import { getDateFullYear } from 'helpers/date-constructor';
+
+import { type IKnowledgesRowProp } from 'components/knowledges-table';
 
 import * as S from './index.styles';
 
@@ -11,47 +13,47 @@ import gitlabIcon from 'assets/table-icons/gitlab-icon.png';
 import scssIcon from 'assets/table-icons/scss-icon.png';
 import figmaIcon from 'assets/table-icons/figma-icon.png';
 
-const age = new Date().getFullYear() - new Date('2006-07-31').getFullYear();
-const rows: IRowProp[] = [
+const age = getDateFullYear() - getDateFullYear('2006-07-31');
+const rows: IKnowledgesRowProp[] = [
     {
         imgSrc: jsIcon,
         name: 'JavaScript',
-        experienceSince: new Date('2021-06-21').getFullYear()
+        experienceSince: getDateFullYear('2021-06-21')
     },
     {
         imgSrc: reactIcon,
         name: 'React',
-        experienceSince: new Date('2022-11-09').getFullYear()
+        experienceSince: getDateFullYear('2022-11-09')
     },
     {
         imgSrc: scssIcon,
         name: 'SCSS',
-        experienceSince: new Date('2022-12-19').getFullYear()
+        experienceSince: getDateFullYear('2022-12-19')
     },
     {
         imgSrc: tsIcon,
         name: 'TypeScript',
-        experienceSince: new Date('2023-08-18').getFullYear()
+        experienceSince: getDateFullYear('2023-08-18')
     },
     {
         imgSrc: nextjsIcon,
         name: 'Next.js',
-        experienceSince: new Date('2023-08-18').getFullYear()
+        experienceSince: getDateFullYear('2023-08-18')
     },
     {
         imgSrc: githubIcon,
         name: 'Github',
-        experienceSince: new Date('2021-01-16').getFullYear()
+        experienceSince: getDateFullYear('2021-01-16')
     },
     {
         imgSrc: gitlabIcon,
         name: 'Gitlab',
-        experienceSince: new Date('2023-08-18').getFullYear()
+        experienceSince: getDateFullYear('2023-08-18')
     },
     {
         imgSrc: figmaIcon,
         name: 'Figma',
-        experienceSince: new Date('2021-02-05').getFullYear()
+        experienceSince: getDateFullYear('2021-02-05')
     },
 ];
 
@@ -68,7 +70,7 @@ function WelcomeModule() {
                     Hi, I'm Daniil Ulyanov!
                 </S.WelcomeTopText>
                 <S.WelcomeBottomText>
-                    An {age}-Year-Old Frontend Developer from Russia, who loves old school computer games, delicious pizza, Breakcore music and JavaScript!
+                    A {age}-Year-Old Frontend Developer from Russia, who loves old school computer games, delicious pizza, Breakcore music and JavaScript!
                 </S.WelcomeBottomText>
                 <S.WelcomeBottomText>
                     Developing projects since 2021.
@@ -81,4 +83,4 @@ function WelcomeModule() {
     );
 }
 
-export default WelcomeModule;
+export { WelcomeModule };

@@ -31,18 +31,21 @@ export const WindowHeader = styled(WindowHeaderRaw)`
 `;
 
 export const WindowContent = styled(WindowContentRaw)`
-    padding: 0;
+    padding: 4px;
     height: calc(100% - 40px);
     max-height: 87.5dvh;        
 
     overflow: auto;
+
+    display: grid;
+    gap: 12px;
 `;
 
 export const ScrollView = styled(ScrollViewRaw)`
     padding: 0px 2px;
 
     & > div {
-        padding-right: 0;
+        padding: 2px 0;
     }
 `;
 

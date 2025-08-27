@@ -1,6 +1,6 @@
 import * as S from './index.styles';
 
-export interface IRowProp {
+export interface IKnowledgesRowProp {
     imgSrc: string;
     name: string;
     experienceSince: number;
@@ -8,7 +8,7 @@ export interface IRowProp {
 
 const currentYear = new Date().getFullYear();
 
-function KnowledgesTable({ rows }: { rows: IRowProp[] }) {
+function KnowledgesTable({ rows }: { rows: IKnowledgesRowProp[] }) {
     return (
         <S.TableWrapper>
             <S.Table>

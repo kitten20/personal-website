@@ -34,14 +34,13 @@ export const ImageFramed = styled(Frame)`
         margin-right: auto;
     }
 
-    @media (max-width: ${size.xs}) {
+    @media (max-width: ${size.sm}) {
         min-width: 250px;
     }
 `;
 
 export const WelcomeModuleContentColumn = styled.div`
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: space-between;
     gap: 15px;
 

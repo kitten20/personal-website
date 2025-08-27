@@ -21,6 +21,10 @@ export default defineConfig({
                 find: 'assets',
                 replacement: '/src/assets'
             },
+            {
+                find: 'helpers',
+                replacement: '/src/utils/helpers'
+            },
         ]
     },
 });

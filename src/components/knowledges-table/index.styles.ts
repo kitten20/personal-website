@@ -85,8 +85,7 @@ export const TableBody = styled(TableBodyRaw)`
     height: 100%;
     padding: 5px 0;
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 5px;
 
     @media (max-width: ${size.prmd}) {

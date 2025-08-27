@@ -29,6 +29,7 @@
       "variables": ["src/utils/variables/index.ts"],
       "components/*": ["src/components/*"],
       "assets/*": ["src/assets/*"],
+      "helpers/*": ["src/utils/helpers/*"],
     },
   },
   "include": ["src"]

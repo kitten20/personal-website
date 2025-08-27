@@ -1,10 +1,11 @@
 import WindowModule from 'modules/global/window-module';
-import WelcomeModule from 'modules/pages/main-page/welcome-module';
+import * as PMImport from 'modules/pages/main-page'; // PM stands for Page Modules
 
 function MainPage() {
     return ( 
         <WindowModule>
-            <WelcomeModule />
+            <PMImport.WelcomeModule />
+            <PMImport.ExperienceModule />
         </WindowModule>
     );
 }

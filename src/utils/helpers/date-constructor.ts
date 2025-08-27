@@ -1,0 +1,2 @@
+export const getDateFullYear = (date?: string) => (!date ? new Date() : new Date(date)).getFullYear();
+export const getDateLocalString = (date?: string) => (!date ? new Date() : new Date(date)).toLocaleDateString();

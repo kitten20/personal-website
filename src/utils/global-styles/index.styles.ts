@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     :root {
-        --title-size: 30px;
+        --title-size: 27px;
         --sub-size: 18px;
         --description-size: 18px;
         --link-color: #0010d1;
@@ -85,7 +85,7 @@ const GlobalStyles = createGlobalStyle`
         }
     }
 
-    @media (max-width: ${size.xs}) {
+    @media (max-width: ${size.sm}) {
         :root {
             --title-size: 17px;
             --sub-size: 13px;
