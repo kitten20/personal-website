@@ -41,8 +41,8 @@ export const ContactButton = styled(Button)`
 
     @media (max-width: ${size.sm}) {
         img {
-            width: 40px;
-            height: 40px;
+            width: 100%;
+            height: 100%;
         }
     }
 `;

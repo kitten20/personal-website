@@ -51,9 +51,11 @@ function ExperienceModule() {
     return (
         <S.ExperienceModule>
             {
-                experienceRows.map(({title, startDate, endDate, stack, description}) => (
+                experienceRows.map(({title, startDate, endDate, stack, description}, rowIndex) => (
                     (
-                        <S.ExperienceRow>
+                        <S.ExperienceRow
+                            key={rowIndex}
+                        >
                             <S.ExperienceTitle>
                                 • {title} — {!endDate && 'since '}{startDate}{endDate && ' to ' + endDate}
                             </S.ExperienceTitle>

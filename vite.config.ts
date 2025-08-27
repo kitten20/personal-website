@@ -25,6 +25,10 @@ export default defineConfig({
                 find: 'helpers',
                 replacement: '/src/utils/helpers'
             },
+            {
+                find: 'hooks',
+                replacement: '/src/utils/hooks'
+            },
         ]
     },
 });

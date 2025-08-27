@@ -30,6 +30,7 @@
       "components/*": ["src/components/*"],
       "assets/*": ["src/assets/*"],
       "helpers/*": ["src/utils/helpers/*"],
+      "hooks/*": ["src/utils/hooks/*"],
     },
   },
   "include": ["src"]

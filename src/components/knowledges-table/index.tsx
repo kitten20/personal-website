@@ -20,8 +20,10 @@ function KnowledgesTable({ rows }: { rows: IKnowledgesRowProp[] }) {
                     </S.TableRow>
                 </S.TableHead>
                 <S.TableBody>
-                    {rows.map(row => (
-                        <S.TableRow>
+                    {rows.map((row, rowIndex) => (
+                        <S.TableRow
+                            key={rowIndex}
+                        >
                             <S.TableDataCell>
                                 <S.TableDataCellIcon
                                     src={row.imgSrc} alt={row.imgSrc} draggable={false}
