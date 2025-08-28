@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 
-const useFontsProgress = (): number => {
+interface IUseFontsLoadingProgressReturn {
+    inPercents: number;
+    haveFontsBeenLoaded: boolean
+}
+
+const useFontsLoadingProgress = (): IUseFontsLoadingProgressReturn => {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
@@ -18,7 +23,7 @@ const useFontsProgress = (): number => {
                 }, 1000);
             })
             .catch(error => {
-                console.error('Ошибка загрузки шрифтов:', error);
+                console.error('fonts loading error:', error);
                 setProgress(100);
             });
 
@@ -33,7 +38,7 @@ const useFontsProgress = (): number => {
 
     }, []);
 
-    return progress;
+    return { inPercents: progress, haveFontsBeenLoaded: progress === 100 };
 };
 
-export default useFontsProgress;
+export default useFontsLoadingProgress;

@@ -23,4 +23,4 @@ function ContactButton({ href, imgSrc }: IContactButtonProps) {
     );
 }
 
-export default ContactButton;
+export { ContactButton };

@@ -1,6 +1,6 @@
 import { getDateFullYear } from 'helpers/date-constructor';
 
-import { type IKnowledgesRowProp } from 'components/knowledges-table';
+import { type IKnowledgesRowProp } from './components/knowledges-table';
 
 import * as S from './index.styles';
 
@@ -75,8 +75,8 @@ function WelcomeModule() {
                 <S.WelcomeBottomText>
                     Developing projects since 2021.
                 </S.WelcomeBottomText>
-                <S.KnowledgesTable 
-                    {...{rows}} 
+                <S.KnowledgesTable
+                    {...{ rows }}
                 />
             </S.WelcomeModuleContentColumn>
         </S.WelcomeModule>

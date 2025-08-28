@@ -1,6 +1,11 @@
 import { useState, useEffect } from 'react';
 
-const useWindowProgress = (): number => {
+interface IUseFontsProgressReturn {
+    inPercents: number;
+    hasWindowBeenLoaded: boolean
+}
+
+const useWindowLoadingProgress = (): IUseFontsProgressReturn => {
     const [progress, setProgress] = useState(0);
 
     useEffect(() => {
@@ -33,7 +38,7 @@ const useWindowProgress = (): number => {
         };
     }, []);
 
-    return progress;
+    return { inPercents: progress, hasWindowBeenLoaded: progress === 100 };
 };
 
-export default useWindowProgress;
+export default useWindowLoadingProgress;

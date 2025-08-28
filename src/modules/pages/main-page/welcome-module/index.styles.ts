@@ -1,4 +1,4 @@
-import KnowledgesTableRaw from 'components/knowledges-table';
+import { KnowledgesTable as KnowledgesTableRaw } from 'modules/pages/main-page/welcome-module/components';
 import { Frame } from 'react95';
 
 import styled from 'styled-components';

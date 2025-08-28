@@ -1,3 +1,5 @@
+import { getDateFullYear } from 'helpers/date-constructor';
+
 import * as S from './index.styles';
 
 export interface IKnowledgesRowProp {
@@ -6,7 +8,7 @@ export interface IKnowledgesRowProp {
     experienceSince: number;
 }
 
-const currentYear = new Date().getFullYear();
+const currentYear = getDateFullYear();
 
 function KnowledgesTable({ rows }: { rows: IKnowledgesRowProp[] }) {
     return (
@@ -39,4 +41,4 @@ function KnowledgesTable({ rows }: { rows: IKnowledgesRowProp[] }) {
     );
 }
 
-export default KnowledgesTable;
+export { KnowledgesTable };

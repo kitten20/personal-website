@@ -1,4 +1,4 @@
-import ContactButton from './contact-button';
+import * as MC  from './components';
 
 import * as S from './index.styles';
 
@@ -13,19 +13,19 @@ function ContactsModule() {
         <S.ContactsModule>
             <S.ContactsTitle>Where can you find me?</S.ContactsTitle>
             <S.ContactsButtons>
-                <ContactButton
+                <MC.ContactButton
                     href='t.me/qMilly' imgSrc={telegramIcon}
                 />
-                <ContactButton
+                <MC.ContactButton
                     href='https://discordapp.com/users/426331342436040704' imgSrc={discordIcon}
                 />
-                <ContactButton
+                <MC.ContactButton
                     href='https://soundcloud.com/qrellyq/tracks' imgSrc={soundcloudIcon}
                 />
-                <ContactButton
+                <MC.ContactButton
                     href='https://github.com/kitten20' imgSrc={githubIcon}
                 />
-                <ContactButton
+                <MC.ContactButton
                     href='https://www.linkedin.com/in/daniil-ulyanov-175819374/' imgSrc={linkedinIcon}
                 />
             </S.ContactsButtons>

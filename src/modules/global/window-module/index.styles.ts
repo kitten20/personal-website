@@ -14,6 +14,9 @@ export const Window = styled(WindowRaw)`
     width: calc(100% - 40px);
     margin: 0 20px;
 
+    position: relative;
+    z-index: 1;
+
     @media (max-width: ${size.md}) {
         width: calc(100% - 20px);
         margin: 0 10px;
