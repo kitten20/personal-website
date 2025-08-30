@@ -10,9 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "i18next": "^25.4.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-i18next": "^15.7.2",
+    "react-i18next": "^15.7.3",
     "react95": "^4.0.0",
     "styled-components": "^6.1.19"
   },

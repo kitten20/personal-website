@@ -49,8 +49,14 @@ export const LineThroughText = styled.p`
 export const FooterBottom = styled.div`
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 8px;
 
     @media (max-width: ${size.sm}) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 715px) {
         flex-direction: column;
     }
 `;
@@ -63,6 +69,8 @@ export const FooterVersion = styled.div`
 
     @media (max-width: ${size.sm}) {
         text-align: center;
+
+        display: grid;
     }
 
     @media (max-width: ${size.xs}) {

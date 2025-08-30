@@ -36,7 +36,7 @@ export const ExperienceStack = styled.p`
 
 export const ExperienceDescription = styled.p`
     color: white;
-    font-size: var(--description-size);
+    font-size: var(--sub-size);
 `;
 
 export const DisableDot = styled.span`

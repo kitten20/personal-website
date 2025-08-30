@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import * as MC  from './components';
 
 import * as S from './index.styles';
@@ -9,9 +11,11 @@ import soundcloudIcon from 'assets/contact-icons/soundcloud.png';
 import discordIcon from 'assets/contact-icons/discord.png';
 
 function ContactsModule() {
+    const { t } = useTranslation();
+
     return ( 
         <S.ContactsModule>
-            <S.ContactsTitle>Where can you find me?</S.ContactsTitle>
+            <S.ContactsTitle>{t('contactsTitle')}</S.ContactsTitle>
             <S.ContactsButtons>
                 <MC.ContactButton
                     href='t.me/qMilly' imgSrc={telegramIcon}

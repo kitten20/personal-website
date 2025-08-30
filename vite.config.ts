@@ -29,6 +29,10 @@ export default defineConfig({
                 find: 'hooks',
                 replacement: '/src/utils/hooks'
             },
+            {
+                find: 'translation-constants',
+                replacement: '/src/utils/variables/translation-constants.ts'
+            },
         ]
     },
 });

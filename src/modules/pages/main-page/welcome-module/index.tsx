@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { getDateFullYear } from 'helpers/date-constructor';
 
 import { type IKnowledgesRowProp } from './components/knowledges-table';
@@ -58,6 +59,8 @@ const rows: IKnowledgesRowProp[] = [
 ];
 
 function WelcomeModule() {
+    const { t } = useTranslation();
+
     return (
         <S.WelcomeModule>
             <S.ImageFramed>
@@ -67,13 +70,13 @@ function WelcomeModule() {
             </S.ImageFramed>
             <S.WelcomeModuleContentColumn>
                 <S.WelcomeTopText>
-                    Hi, I'm Daniil Ulyanov!
+                    {t('welcomeTitle')}
                 </S.WelcomeTopText>
                 <S.WelcomeBottomText>
-                    A {age}-Year-Old Frontend Developer from Russia, who loves old school computer games, delicious pizza, Breakcore music and JavaScript!
+                    {t('welcomeDescription', { age })}
                 </S.WelcomeBottomText>
                 <S.WelcomeBottomText>
-                    Developing projects since 2021.
+                    {t('welcomeWorkingSince')}
                 </S.WelcomeBottomText>
                 <S.KnowledgesTable
                     {...{ rows }}
