@@ -35,7 +35,11 @@ const GlobalStyles = createGlobalStyle`
     * {
         font-family: 'ms_sans_serif', 'ms_sans_serif_rus' !important;
 
-        user-select: none;
+        &::selection {
+            background-color: #060084;
+
+            color: white;
+        }
 
         @media (max-width: ${size.prmd}) {
             &::-webkit-scrollbar {
